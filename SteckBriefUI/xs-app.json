@@ -1,0 +1,14 @@
+{
+  "welcomeFile": "/SteckBriefUI/index.html",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/SteckBriefUI/(.*)$",
+      "target": "$1",
+      "localDir": "webapp"
+    }
+  ]
+}
