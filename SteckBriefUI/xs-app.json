@@ -1,12 +1,12 @@
 {
-  "welcomeFile": "/SteckBriefUI/index.html",
-  "authenticationMethod": "route",
+  "welcomeFile": "/Steckbrief/index.html",
+  "authenticationMethod": "none",
   "logout": {
     "logoutEndpoint": "/do/logout"
   },
   "routes": [
     {
-      "source": "^/SteckBriefUI/(.*)$",
+      "source": "^/Steckbrief/(.*)$",
       "target": "$1",
       "localDir": "webapp"
     }
