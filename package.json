@@ -1,0 +1,24 @@
+{
+  "name": "Steckbrief",
+  "version": "1.0.0",
+  "description": "My carrer experience",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Domae84/onepager"
+  },
+  "author": "Dominik Espitalier",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-eslint": "*",
+    "grunt-openui5": "*",
+    "grunt-contrib-watch": "*"
+  }
+}

@@ -1,10 +1,413 @@
-<mvc:View controllerName="domae.privat.SteckBriefUI.controller.Root" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true" xmlns="sap.m">
-	<App id="idAppControl">
-		<pages>
-			<Page title="{i18n>title}">
-				<content></content>
-			</Page>
-		</pages>
-	</App>
+<mvc:View controllerName="domae.privat.SteckBriefUI.controller.Root"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:core="sap.ui.core"
+          xmlns:layout="sap.ui.layout"
+          xmlns="sap.m"
+          displayBlock="true">
+    <App id="idAppControl">
+        <pages>
+            <Page showHeader="false">
+                <content>
+                    <layout:Grid class="upperGrid">
+                        <layout:content>
+                            <HBox justifyContent="Center" class="upperGridElements">
+                                <Image class="profilePic"
+                                       src="./images/Download.jpeg"
+                                       densityAware="false">
+                                </Image>
+                                <layoutData>
+                                    <layout:GridData span="L4M4S4"/>
+                                </layoutData>
+                            </HBox>
+                            <VBox class="upperGridElements">
+                                <HBox>
+                                    <Text class="nameTitle nameBox" text="Arnold Schwarzenegger"/>
+                                </HBox>
+                                <HBox>
+                                    <Text class="descriptionTitle descBox" text="Geilster Typ auf Erden"/>
+                                </HBox>
+                                <layoutData>
+                                    <layout:GridData span="L8M8S8"/>
+                                </layoutData>
+                            </VBox>
+                        </layout:content>
+                    </layout:Grid>
+                    <layout:BlockLayout id="BlockLayout">
+                        <layout:BlockLayoutRow>
+                            <layout:BlockLayoutCell class="skillBox onePadding" width="1">
+                                <layout:BlockLayout>
+                                    <!--Contact-->
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell class="onePadding" title="Contact">
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <core:Icon
+                                                            src="sap-icon://call">
+                                                        <core:layoutData>
+                                                            <layout:GridData span="L2M2S2"/>
+                                                        </core:layoutData>
+                                                    </core:Icon>
+                                                    <Text text="0151 678 34524">
+                                                        <layoutData>
+                                                            <layout:GridData span="L10M10S10"/>
+                                                        </layoutData>
+                                                    </Text>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <core:Icon
+                                                            src="sap-icon://email">
+                                                        <core:layoutData>
+                                                            <layout:GridData span="L2M2S2"/>
+                                                        </core:layoutData>
+                                                    </core:Icon>
+                                                    <Text text="Dominik.Espitalier@gmx.de">
+                                                        <layoutData>
+                                                            <layout:GridData span="L10M10S10"/>
+                                                        </layoutData>
+                                                    </Text>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <core:Icon
+                                                            src="sap-icon://home">
+                                                        <core:layoutData>
+                                                            <layout:GridData span="L2M2S2"/>
+                                                        </core:layoutData>
+                                                    </core:Icon>
+                                                    <layout:VerticalLayout>
+                                                        <Text text="Kreuzstraße 15"/>
+                                                        <Text text="76698 Ubstadt-Weiher"/>
+                                                        <layout:layoutData>
+                                                            <layout:GridData span="L10M10S10"/>
+                                                        </layout:layoutData>
+                                                    </layout:VerticalLayout>
+                                                </layout:content>
+                                            </layout:Grid>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <!--Frontend Skills-->
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell class="onePadding" title="Frontend Skills">
+                                            <!--HTML5-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/html5.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="HTML5">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <!--CSS3-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/css3.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="CSS3">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <!--Javascript-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/javascript.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="Javascript">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="4" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <!--JQuery-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/jquery.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="jQuery">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <!--UI5-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/openui5.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="SAP UI5">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="5" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <!--Backend Skills-->
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell class="onePadding" title="Backend Skills">
+                                            <!--Abap-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/abap.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="ABAP">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="4" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <!--Java-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/java.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="Java">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <!--NodeJs-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/nodejs.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="nodeJs">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="2" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <!--DevOps SKills-->
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell class="onePadding" title="DevOps Skills">
+                                            <!--Maven-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/maven-logo.png"
+                                                            width="2.5rem" height="2rem"
+                                                            tooltip="maven">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="2" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <!--Grunt-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/grunt.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="maven">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <!--Jenkins-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/Jenkins.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="maven">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <!--Docker-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/docker.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="maven">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="1" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                            <!--Git-->
+                                            <layout:Grid>
+                                                <layout:content>
+                                                    <Image
+                                                            src="./images/git.png"
+                                                            width="2rem" height="2rem"
+                                                            tooltip="maven">
+                                                        <layoutData>
+                                                            <layout:GridData span="L3M3S3"/>
+                                                        </layoutData>
+                                                    </Image>
+                                                    <RatingIndicator maxValue="5" value="4" iconSize="1rem" tooltip="Rating Tooltip" >
+                                                        <layoutData>
+                                                            <layout:GridData span="L9M9S9"/>
+                                                        </layoutData>
+                                                    </RatingIndicator>
+                                                </layout:content>
+                                            </layout:Grid>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <!--Cloud Skills-->
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell class="onePadding" title="Cloud Skills">
+
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                </layout:BlockLayout>
+                            </layout:BlockLayoutCell>
+                            <layout:BlockLayoutCell class="textBox onePadding" width="3">
+                                <layout:BlockLayout>
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell title="Profile" class="onePadding">
+                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell title="Project Experience A" class="onePadding">
+                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell title="Project Experience B" class="onePadding">
+                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell title="Project Experience C" class="onePadding">
+                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell title="Project Experience D" class="onePadding">
+                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell title="Project Experience E" class="onePadding">
+                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                </layout:BlockLayout>
+                            </layout:BlockLayoutCell>
+                        </layout:BlockLayoutRow>
+
+                    </layout:BlockLayout>
+                </content>
+            </Page>
+        </pages>
+    </App>
 </mvc:View>

@@ -1,1 +1,56 @@
 /* Enter your custom styles here */
+.profilePic {
+    border-radius: 50%;
+    margin-top: 0;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.upperGrid {
+    background-color: #d5dadc;
+}
+.upperGridElements {
+    margin-top: 2rem;
+}
+.nameBox {
+    margin-top: 4rem;
+}
+.descBox{
+    margin-top: 1rem;
+}
+.nameTitle {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26.4px;
+}
+
+.descriptionTitle {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 26.4px;
+}
+
+.textBox {
+    background-color: #bac1c4;
+}
+
+.skillBox {
+    background-color: #9ea8ad;
+}
+
+.onePadding > div {
+    padding: 1rem !important;
+}
+
+.noPadding > div {
+    padding: 0 !important;
+}
