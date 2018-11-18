@@ -39,7 +39,7 @@
                                     <!--Contact-->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell class="onePadding" title="Contact">
-                                            <layout:Grid>
+                                            <layout:Grid class="noMarginPaddingLeftChild">
                                                 <layout:content>
                                                     <core:Icon
                                                             src="sap-icon://call">
@@ -54,7 +54,7 @@
                                                     </Text>
                                                 </layout:content>
                                             </layout:Grid>
-                                            <layout:Grid>
+                                            <layout:Grid class="noMarginPaddingLeftChild">
                                                 <layout:content>
                                                     <core:Icon
                                                             src="sap-icon://email">
@@ -69,7 +69,7 @@
                                                     </Text>
                                                 </layout:content>
                                             </layout:Grid>
-                                            <layout:Grid>
+                                            <layout:Grid class="noMarginPaddingLeftChild">
                                                 <layout:content>
                                                     <core:Icon
                                                             src="sap-icon://home">
@@ -88,259 +88,103 @@
                                             </layout:Grid>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
-                                    <!--Frontend Skills-->
+                                    <!--Education-->
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell class="onePadding" title="Frontend Skills">
-                                            <!--HTML5-->
-                                            <layout:Grid>
+                                        <layout:BlockLayoutCell class="onePadding" title="Education">
+                                            <layout:Grid class="noMarginPaddingLeftChild sapUiSmallMarginBottom"
+                                                         defaultSpan="L12M12S12" vSpacing="0">
                                                 <layout:content>
-                                                    <Image
-                                                            src="./images/html5.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="HTML5">
-                                                        <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
-                                                        </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
+                                                    <Text text="Bachelor of Science" class="titleBold"/>
+                                                    <Text text="Business Information Systems - International"/>
+                                                    <Text text="University of Applied Sciences - Frankfurt am Main"/>
+                                                    <Text text="2008 - 2014" class="textEmph"/>
                                                 </layout:content>
                                             </layout:Grid>
-                                            <!--CSS3-->
-                                            <layout:Grid>
+                                            <layout:Grid class="noMarginPaddingLeftChild sapUiSmallMarginBottom"
+                                                         defaultSpan="L12M12S12" vSpacing="0">
                                                 <layout:content>
-                                                    <Image
-                                                            src="./images/css3.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="CSS3">
-                                                        <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
-                                                        </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
+                                                    <Text text="Technical Diploma" class="titleBold"/>
+                                                    <Text text="Focus: Information Technology"/>
+                                                    <Text text="Hochtaunusschule - Oberursel"/>
+                                                    <Text text="2006 - 2007" class="textEmph"/>
                                                 </layout:content>
                                             </layout:Grid>
-                                            <!--Javascript-->
-                                            <layout:Grid>
+                                            <layout:Grid class="noMarginPaddingLeftChild" defaultSpan="L12M12S12"
+                                                         vSpacing="0">
                                                 <layout:content>
-                                                    <Image
-                                                            src="./images/javascript.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="Javascript">
-                                                        <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
-                                                        </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="4" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
-                                                </layout:content>
-                                            </layout:Grid>
-                                            <!--JQuery-->
-                                            <layout:Grid>
-                                                <layout:content>
-                                                    <Image
-                                                            src="./images/jquery.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="jQuery">
-                                                        <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
-                                                        </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
-                                                </layout:content>
-                                            </layout:Grid>
-                                            <!--UI5-->
-                                            <layout:Grid>
-                                                <layout:content>
-                                                    <Image
-                                                            src="./images/openui5.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="SAP UI5">
-                                                        <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
-                                                        </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="5" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
+                                                    <Text text="Apprenticeship" class="titleBold"/>
+                                                    <Text text="Technischer Assistent für Informationsverarbeitung"/>
+                                                    <Text text="Hochtaunusschule - Oberursel"/>
+                                                    <Text text="2004 - 2006" class="textEmph"/>
                                                 </layout:content>
                                             </layout:Grid>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
-                                    <!--Backend Skills-->
+                                    <!--Hobbies-->
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell class="onePadding" title="Backend Skills">
-                                            <!--Abap-->
-                                            <layout:Grid>
+                                        <layout:BlockLayoutCell class="onePadding" title="Interests">
+                                            <layout:Grid class="noMarginPaddingLeftChild">
                                                 <layout:content>
-                                                    <Image
-                                                            src="./images/abap.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="ABAP">
+                                                    <core:Icon
+                                                            src="sap-icon://physical-activity">
+                                                        <core:layoutData>
+                                                            <layout:GridData span="L2M2S2"/>
+                                                        </core:layoutData>
+                                                    </core:Icon>
+                                                    <Text text="Triathlon">
                                                         <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
+                                                            <layout:GridData span="L10M10S10"/>
                                                         </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="4" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
+                                                    </Text>
                                                 </layout:content>
                                             </layout:Grid>
-                                            <!--Java-->
-                                            <layout:Grid>
+                                            <layout:Grid class="noMarginPaddingLeftChild">
                                                 <layout:content>
-                                                    <Image
-                                                            src="./images/java.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="Java">
+                                                    <core:Icon
+                                                            src="sap-icon://card">
+                                                        <core:layoutData>
+                                                            <layout:GridData span="L2M2S2"/>
+                                                        </core:layoutData>
+                                                    </core:Icon>
+                                                    <Text text="Snowboarding / Hiking">
                                                         <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
+                                                            <layout:GridData span="L10M10S10"/>
                                                         </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
+                                                    </Text>
                                                 </layout:content>
                                             </layout:Grid>
-                                            <!--NodeJs-->
-                                            <layout:Grid>
+                                            <layout:Grid class="noMarginPaddingLeftChild">
                                                 <layout:content>
-                                                    <Image
-                                                            src="./images/nodejs.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="nodeJs">
-                                                        <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
-                                                        </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="2" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
+                                                    <core:Icon
+                                                            src="sap-icon://flight">
+                                                        <core:layoutData>
+                                                            <layout:GridData span="L2M2S2"/>
+                                                        </core:layoutData>
+                                                    </core:Icon>
+                                                    <layout:VerticalLayout>
+                                                        <Text text="Traveling"/>
+                                                        <layout:layoutData>
+                                                            <layout:GridData span="L10M10S10"/>
+                                                        </layout:layoutData>
+                                                    </layout:VerticalLayout>
                                                 </layout:content>
                                             </layout:Grid>
-                                        </layout:BlockLayoutCell>
-                                    </layout:BlockLayoutRow>
-                                    <!--DevOps SKills-->
-                                    <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell class="onePadding" title="DevOps Skills">
-                                            <!--Maven-->
-                                            <layout:Grid>
+                                            <layout:Grid class="noMarginPaddingLeftChild">
                                                 <layout:content>
-                                                    <Image
-                                                            src="./images/maven-logo.png"
-                                                            width="2.5rem" height="2rem"
-                                                            tooltip="maven">
-                                                        <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
-                                                        </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="2" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
+                                                    <core:Icon
+                                                            src="sap-icon://source-code">
+                                                        <core:layoutData>
+                                                            <layout:GridData span="L2M2S2"/>
+                                                        </core:layoutData>
+                                                    </core:Icon>
+                                                    <layout:VerticalLayout>
+                                                        <Text text="Software Development"/>
+                                                        <layout:layoutData>
+                                                            <layout:GridData span="L10M10S10"/>
+                                                        </layout:layoutData>
+                                                    </layout:VerticalLayout>
                                                 </layout:content>
                                             </layout:Grid>
-                                            <!--Grunt-->
-                                            <layout:Grid>
-                                                <layout:content>
-                                                    <Image
-                                                            src="./images/grunt.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="maven">
-                                                        <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
-                                                        </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
-                                                </layout:content>
-                                            </layout:Grid>
-                                            <!--Jenkins-->
-                                            <layout:Grid>
-                                                <layout:content>
-                                                    <Image
-                                                            src="./images/Jenkins.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="maven">
-                                                        <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
-                                                        </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="3" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
-                                                </layout:content>
-                                            </layout:Grid>
-                                            <!--Docker-->
-                                            <layout:Grid>
-                                                <layout:content>
-                                                    <Image
-                                                            src="./images/docker.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="maven">
-                                                        <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
-                                                        </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="1" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
-                                                </layout:content>
-                                            </layout:Grid>
-                                            <!--Git-->
-                                            <layout:Grid>
-                                                <layout:content>
-                                                    <Image
-                                                            src="./images/git.png"
-                                                            width="2rem" height="2rem"
-                                                            tooltip="maven">
-                                                        <layoutData>
-                                                            <layout:GridData span="L3M3S3"/>
-                                                        </layoutData>
-                                                    </Image>
-                                                    <RatingIndicator maxValue="5" value="4" iconSize="1rem" tooltip="Rating Tooltip" >
-                                                        <layoutData>
-                                                            <layout:GridData span="L9M9S9"/>
-                                                        </layoutData>
-                                                    </RatingIndicator>
-                                                </layout:content>
-                                            </layout:Grid>
-                                        </layout:BlockLayoutCell>
-                                    </layout:BlockLayoutRow>
-                                    <!--Cloud Skills-->
-                                    <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell class="onePadding" title="Cloud Skills">
-
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                 </layout:BlockLayout>
@@ -357,7 +201,10 @@
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="Project Experience A" class="onePadding">
+                                        <layout:BlockLayoutCell
+                                                title="Working Experience at SAP Deutschland SE &amp; Co. KG (2015 - Today)"
+                                                class="onePadding">
+
                                             <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                                             sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
                                             sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -366,7 +213,13 @@
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="Project Experience B" class="onePadding">
+                                        <layout:BlockLayoutCell title="" class="sapUiSmallMarginBeginn">
+                                            <VBox class="sapUiTinyMarginBottom">
+                                                <Title text="SAPUI5 Frontend Application Development" titleStyle="H2"
+                                                       class="noShadow titleBold"/>
+                                                <Title text="Car Manufacturer, Germany - 12 Month" titleStyle="H4"
+                                                       class="noShadow"/>
+                                            </VBox>
                                             <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                                             sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
                                             sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -375,7 +228,13 @@
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="Project Experience C" class="onePadding">
+                                        <layout:BlockLayoutCell title="" class="sapUiSmallMarginBeginn">
+                                            <VBox class="sapUiTinyMarginBottom">
+                                                <Title text="SAPUI5 Frontend Application Development" titleStyle="H2"
+                                                       class="noShadow titleBold"/>
+                                                <Title text="Confectioner, Germany - 12 Month" titleStyle="H4"
+                                                       class="noShadow"/>
+                                            </VBox>
                                             <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                                             sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
                                             sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -384,7 +243,13 @@
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="Project Experience D" class="onePadding">
+                                        <layout:BlockLayoutCell title="" class="sapUiSmallMarginBeginn">
+                                            <VBox class="sapUiTinyMarginBottom">
+                                                <Title text="SAP Fiori Application Development" titleStyle="H2"
+                                                       class="noShadow titleBold"/>
+                                                <Title text="Airline, Germany - 12 Month" titleStyle="H4"
+                                                       class="noShadow"/>
+                                            </VBox>
                                             <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                                             sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
                                             sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -393,7 +258,28 @@
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="Project Experience E" class="onePadding">
+                                        <layout:BlockLayoutCell title="" class="sapUiSmallMarginBeginn">
+                                            <VBox class="sapUiTinyMarginBottom">
+                                                <Title text="SAP Fiori Application Development" titleStyle="H2"
+                                                       class="noShadow titleBold"/>
+                                                <Title text="Car Manufacturer, Germany - 10 Month" titleStyle="H4"
+                                                       class="noShadow"/>
+                                            </VBox>
+                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell title="" class="sapUiSmallMarginBeginn">
+                                            <VBox class="sapUiTinyMarginBottom">
+                                                <Title text="SAP Cloud Platform Development" titleStyle="H2"
+                                                       class="noShadow titleBold"/>
+                                                <Title text="SAP SE, Walldorf / Germany - 6 Month" titleStyle="H4"
+                                                       class="noShadow"/>
+                                            </VBox>
                                             <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                                             sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
                                             sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.

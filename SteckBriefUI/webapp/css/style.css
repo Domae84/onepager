@@ -22,7 +22,6 @@
     margin-top: 1rem;
 }
 .nameTitle {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 3rem;
     font-style: normal;
     font-variant: normal;
@@ -31,7 +30,6 @@
 }
 
 .descriptionTitle {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-variant: normal;
@@ -53,4 +51,35 @@
 
 .noPadding > div {
     padding: 0 !important;
+}
+
+.noMarginPaddingLeft {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.noMarginPaddingLeftChild > div {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.titleBold {
+    font-weight: bold;
+}
+
+.textEmph {
+    font-style: italic;
+}
+
+.noMarginTopBottom {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.noShadow {
+    text-shadow: none !important;
+}
+
+.titleBox {
+
 }
