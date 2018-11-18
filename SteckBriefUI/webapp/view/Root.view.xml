@@ -21,10 +21,10 @@
                             </HBox>
                             <VBox class="upperGridElements">
                                 <HBox>
-                                    <Text class="nameTitle nameBox" text="Arnold Schwarzenegger"/>
+                                    <Text class="nameTitle nameBox" text="Dominik Espitalier"/>
                                 </HBox>
                                 <HBox>
-                                    <Text class="descriptionTitle descBox" text="Geilster Typ auf Erden"/>
+                                    <Text class="descriptionTitle descBox" text="SAP Fiori Full Stack Developer"/>
                                 </HBox>
                                 <layoutData>
                                     <layout:GridData span="L8M8S8"/>
@@ -69,7 +69,7 @@
                                                     </Text>
                                                 </layout:content>
                                             </layout:Grid>
-                                            <layout:Grid class="noMarginPaddingLeftChild">
+                                            <layout:Grid class="noMarginPaddingLeftChild" vSpacing="0">
                                                 <layout:content>
                                                     <core:Icon
                                                             src="sap-icon://home">
@@ -201,21 +201,13 @@
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell
-                                                title="Working Experience at SAP Deutschland SE &amp; Co. KG (2015 - Today)"
-                                                class="onePadding">
-
-                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                        <layout:BlockLayoutCell title="Professional Experience" class="onePadding">
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="" class="sapUiSmallMarginBeginn">
+                                        <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
-                                                <Title text="SAPUI5 Frontend Application Development" titleStyle="H2"
+                                                <Title text="SAPUI5 Frontend Application Development" titleStyle="H3"
                                                        class="noShadow titleBold"/>
                                                 <Title text="Car Manufacturer, Germany - 12 Month" titleStyle="H4"
                                                        class="noShadow"/>
@@ -228,7 +220,7 @@
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="" class="sapUiSmallMarginBeginn">
+                                        <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
                                                 <Title text="SAPUI5 Frontend Application Development" titleStyle="H2"
                                                        class="noShadow titleBold"/>
@@ -243,7 +235,7 @@
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="" class="sapUiSmallMarginBeginn">
+                                        <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
                                                 <Title text="SAP Fiori Application Development" titleStyle="H2"
                                                        class="noShadow titleBold"/>
@@ -258,7 +250,7 @@
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="" class="sapUiSmallMarginBeginn">
+                                        <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
                                                 <Title text="SAP Fiori Application Development" titleStyle="H2"
                                                        class="noShadow titleBold"/>
@@ -273,7 +265,7 @@
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="" class="sapUiSmallMarginBeginn">
+                                        <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
                                                 <Title text="SAP Cloud Platform Development" titleStyle="H2"
                                                        class="noShadow titleBold"/>
