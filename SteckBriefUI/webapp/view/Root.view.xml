@@ -191,6 +191,7 @@
                             </layout:BlockLayoutCell>
                             <layout:BlockLayoutCell class="textBox onePadding" width="3">
                                 <layout:BlockLayout>
+                                    <!--Profile-->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="Profile" class="onePadding">
                                             <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
@@ -200,8 +201,9 @@
                                             amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
+                                    <!--Professional Experience-->
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="Professional Experience" class="onePadding">
+                                        <layout:BlockLayoutCell title="Professional Experience - SAP Deutschland - January 2015 till Now" class="onePadding">
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
@@ -212,11 +214,11 @@
                                                 <Title text="Car Manufacturer, Germany - 12 Month" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
-                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                            <Text text="Development of a dashboard application to visualize supply bottlenecks between warehouse and production line.
+                                            The data comes from an SAP Application Server ABAP and is forwarded to the frontend via an OData service."/>
+                                            <Title text="Core activities" titleStyle="H5"
+                                                   class="noShadow titleBold sapUiTinyMarginTop"/>
+                                            <FormattedText htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;li>Development of the SAPUI5 Frontend&lt;/li>&lt;li>Development of a Dashboard Custom Control&lt;/li>&lt;li>Working with OData API for sending/retrieving Data from/to the OData Service&lt;/li>&lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>&lt;/ul>"/>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
@@ -227,11 +229,10 @@
                                                 <Title text="Confectioner, Germany - 12 Month" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
-                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                            <Text text="Development of a mobile application for the presentation of products and their marketing in supermarkets. The images shown originate from a SAP Netweaver Java backend and are transferred to the frontend via a REST service."/>
+                                            <Title text="Core activities" titleStyle="H5"
+                                                   class="noShadow titleBold sapUiTinyMarginTop"/>
+                                            <FormattedText htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;/ul>"/>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
@@ -242,11 +243,10 @@
                                                 <Title text="Airline, Germany - 12 Month" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
-                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                            <Text text=""/>
+                                            <Title text="Core activities" titleStyle="H5"
+                                                   class="noShadow titleBold sapUiTinyMarginTop"/>
+                                            <FormattedText htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;/ul>"/>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
@@ -257,11 +257,10 @@
                                                 <Title text="Car Manufacturer, Germany - 10 Month" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
-                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                            <Text text=""/>
+                                            <Title text="Core activities" titleStyle="H5"
+                                                   class="noShadow titleBold sapUiTinyMarginTop"/>
+                                            <FormattedText htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;/ul>"/>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <layout:BlockLayoutRow>
@@ -272,11 +271,10 @@
                                                 <Title text="SAP SE, Walldorf / Germany - 6 Month" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
-                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                            <Text text=""/>
+                                            <Title text="Core activities" titleStyle="H5"
+                                                   class="noShadow titleBold sapUiTinyMarginTop"/>
+                                            <FormattedText htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;/ul>"/>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                 </layout:BlockLayout>

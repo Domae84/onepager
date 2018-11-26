@@ -79,3 +79,7 @@
 .noShadow {
     text-shadow: none !important;
 }
+
+.htmlList {
+    font-size: 1rem;
+}
