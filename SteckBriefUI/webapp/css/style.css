@@ -10,7 +10,7 @@
 }
 
 .upperGrid {
-    background-color: #d5dadc;
+    background-color: #EFF4F9;
 }
 .upperGridElements {
     margin-top: 2rem;
@@ -38,11 +38,11 @@
 }
 
 .textBox {
-    background-color: #bac1c4;
+    background-color: #E5E5E5;
 }
 
 .skillBox {
-    background-color: #9ea8ad;
+    background-color: #E7ECF0;
 }
 
 .onePadding > div {
@@ -81,5 +81,9 @@
 }
 
 .htmlList {
+    font-size: 1rem;
+}
+
+.cellBox {
     font-size: 1rem;
 }
