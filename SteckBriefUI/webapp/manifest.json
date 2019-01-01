@@ -12,6 +12,12 @@
 		"sourceTemplate": {
 			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
 			"version": "1.40.12"
+		},
+		"dataSources":{
+			"profExpList":{
+				"uri":"model/profExpList.json",
+				"type":"JSON"
+			}
 		}
 	},
 
@@ -64,6 +70,10 @@
 				"settings": {
 					"bundleName": "domae.privat.SteckBriefUI.i18n.i18n"
 				}
+			},
+			"profExpList":{
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "profExpList"
 			}
 		},
 		"resources": {

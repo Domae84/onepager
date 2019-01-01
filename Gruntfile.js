@@ -109,6 +109,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-openui5');
 	grunt.loadNpmTasks('grunt-eslint');
+    grunt.loadNpmTasks('grunt-native2ascii');
 
 	// Server task
 	grunt.registerTask('serve', function(target) {

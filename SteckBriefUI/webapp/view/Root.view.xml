@@ -21,10 +21,10 @@
                             </HBox>
                             <VBox class="upperGridElements">
                                 <HBox>
-                                    <Text class="nameTitle nameBox" text="Dominik Espitalier"/>
+                                    <Text class="nameTitle nameBox" text="{i18n>name}"/>
                                 </HBox>
                                 <HBox>
-                                    <Text class="descriptionTitle descBox" text="SAP Fiori Full Stack Developer"/>
+                                    <Text class="descriptionTitle descBox" text="{i18n>jobTitle}"/>
                                 </HBox>
                                 <layoutData>
                                     <layout:GridData span="L8M8S8"/>
@@ -34,6 +34,7 @@
                     </layout:Grid>
                     <layout:BlockLayout id="BlockLayout">
                         <layout:BlockLayoutRow>
+                            <!--Left bar -->
                             <layout:BlockLayoutCell class="skillBox onePadding" width="1">
                                 <layout:BlockLayout>
                                     <!--Contact-->
@@ -47,7 +48,7 @@
                                                             <layout:GridData span="L2M2S2"/>
                                                         </core:layoutData>
                                                     </core:Icon>
-                                                    <Text text="0151 678 34524">
+                                                    <Text text="{i18n>mobile}">
                                                         <layoutData>
                                                             <layout:GridData span="L10M10S10"/>
                                                         </layoutData>
@@ -62,7 +63,7 @@
                                                             <layout:GridData span="L2M2S2"/>
                                                         </core:layoutData>
                                                     </core:Icon>
-                                                    <Text text="Dominik.Espitalier@gmx.de">
+                                                    <Text text="{i18n>mail}">
                                                         <layoutData>
                                                             <layout:GridData span="L10M10S10"/>
                                                         </layoutData>
@@ -78,8 +79,8 @@
                                                         </core:layoutData>
                                                     </core:Icon>
                                                     <layout:VerticalLayout>
-                                                        <Text text="Kreuzstraße 15"/>
-                                                        <Text text="76698 Ubstadt-Weiher"/>
+                                                        <Text text="{i18n>street}"/>
+                                                        <Text text="{i18n>zip} {i18n>town}"/>
                                                         <layout:layoutData>
                                                             <layout:GridData span="L10M10S10"/>
                                                         </layout:layoutData>
@@ -90,39 +91,39 @@
                                     </layout:BlockLayoutRow>
                                     <!--Education-->
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell class="onePadding" title="Education">
+                                        <layout:BlockLayoutCell class="onePadding" title="{i18n>lbEducationTitle}">
                                             <layout:Grid class="noMarginPaddingLeftChild sapUiSmallMarginBottom"
                                                          defaultSpan="L12M12S12" vSpacing="0">
                                                 <layout:content>
-                                                    <Text text="Bachelor of Science" class="titleBold"/>
-                                                    <Text text="Business Information Systems - International"/>
-                                                    <Text text="University of Applied Sciences - Frankfurt am Main"/>
-                                                    <Text text="2008 - 2014" class="textEmph"/>
+                                                    <Text text="{i18n>lbBachelorName}" class="titleBold"/>
+                                                    <Text text="{i18n>lbBachelorTitle}"/>
+                                                    <Text text="{i18n>lbBachelorTown}"/>
+                                                    <Text text="{i18n>lbBachelorPeriod}" class="textEmph"/>
                                                 </layout:content>
                                             </layout:Grid>
                                             <layout:Grid class="noMarginPaddingLeftChild sapUiSmallMarginBottom"
                                                          defaultSpan="L12M12S12" vSpacing="0">
                                                 <layout:content>
-                                                    <Text text="Technical Diploma" class="titleBold"/>
-                                                    <Text text="Focus: Information Technology"/>
-                                                    <Text text="Hochtaunusschule - Oberursel"/>
-                                                    <Text text="2006 - 2007" class="textEmph"/>
+                                                    <Text text="{i18n>lbDiplomaName}" class="titleBold"/>
+                                                    <Text text="{i18n>lbDiplomaTitle}"/>
+                                                    <Text text="{i18n>lbDiplomaTown}"/>
+                                                    <Text text="{i18n>lbDiplomaPeriod}" class="textEmph"/>
                                                 </layout:content>
                                             </layout:Grid>
                                             <layout:Grid class="noMarginPaddingLeftChild" defaultSpan="L12M12S12"
                                                          vSpacing="0">
                                                 <layout:content>
-                                                    <Text text="Apprenticeship" class="titleBold"/>
-                                                    <Text text="Technischer Assistent für Informationsverarbeitung"/>
-                                                    <Text text="Hochtaunusschule - Oberursel"/>
-                                                    <Text text="2004 - 2006" class="textEmph"/>
+                                                    <Text text="{i18n>lbApprenticeName}" class="titleBold"/>
+                                                    <Text text="{i18n>lbApprenticeTitle}"/>
+                                                    <Text text="{i18n>lbApprenticeTown}"/>
+                                                    <Text text="{i18n>lbApprenticePeriod}" class="textEmph"/>
                                                 </layout:content>
                                             </layout:Grid>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <!--Trainings-->
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell class="onePadding" title="SAP Trainings">
+                                        <layout:BlockLayoutCell class="onePadding" title="{i18n>lbTrainingsTitle}">
                                             <layout:Grid class="noMarginPaddingLeftChild">
                                                 <layout:content>
                                                     <core:Icon
@@ -132,9 +133,10 @@
                                                         </core:layoutData>
                                                     </core:Icon>
                                                     <Link
-                                                            text="BC 400"
+                                                            text="{i18n>lbTrainingsBc400Name}"
                                                             target="_blank"
-                                                            href="https://training.sap.com/course/bc400-abap-workbench-grundlagen-classroom-016-de-de/">
+                                                            href="{i18n>lbTrainingsBc400Url}"
+                                                            tooltip="{i18n>lbTrainingsBc400Url}">
                                                         <layoutData>
                                                             <layout:GridData span="L10M10S10"/>
                                                         </layoutData>
@@ -150,9 +152,10 @@
                                                         </core:layoutData>
                                                     </core:Icon>
                                                     <Link
-                                                            text="GW 100"
+                                                            text="{i18n>lbTrainingsGw100Name}"
                                                             target="_blank"
-                                                            href="https://training.sap.com/course/gw100-sap-gateway---erstellen-von-odata-services-remoteclassroom-016-de-de/?">
+                                                            href="{i18n>lbTrainingsGw100Url}"
+                                                            tooltip="{i18n>lbTrainingsGw100Url}">
                                                         <layoutData>
                                                             <layout:GridData span="L10M10S10"/>
                                                         </layoutData>
@@ -169,9 +172,10 @@
                                                     </core:Icon>
                                                     <layout:VerticalLayout>
                                                         <Link
-                                                                text="HA 300"
+                                                                text="{i18n>lbTrainingsHa300Name}"
                                                                 target="_blank"
-                                                                href="https://training.sap.com/course/ha300e-sap-hana-modeling-e-learning-012-de-en/">
+                                                                href="{i18n>lbTrainingsHa300Url}"
+                                                                tooltip="{i18n>lbTrainingsHa300Url}">
                                                             <layoutData>
                                                                 <layout:GridData span="L10M10S10"/>
                                                             </layoutData>
@@ -183,7 +187,7 @@
                                     </layout:BlockLayoutRow>
                                     <!--Hobbies-->
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell class="onePadding" title="Interests">
+                                        <layout:BlockLayoutCell class="onePadding" title="{i18n>lbInterestsTitle}">
                                             <layout:Grid class="noMarginPaddingLeftChild">
                                                 <layout:content>
                                                     <core:Icon
@@ -192,7 +196,7 @@
                                                             <layout:GridData span="L2M2S2"/>
                                                         </core:layoutData>
                                                     </core:Icon>
-                                                    <Text text="Triathlon">
+                                                    <Text text="{i18n>lbInterestsTriathlon}">
                                                         <layoutData>
                                                             <layout:GridData span="L10M10S10"/>
                                                         </layoutData>
@@ -207,7 +211,7 @@
                                                             <layout:GridData span="L2M2S2"/>
                                                         </core:layoutData>
                                                     </core:Icon>
-                                                    <Text text="Snowboarding / Hiking">
+                                                    <Text text="{i18n>lbInterestsSnowHike}">
                                                         <layoutData>
                                                             <layout:GridData span="L10M10S10"/>
                                                         </layoutData>
@@ -223,7 +227,7 @@
                                                         </core:layoutData>
                                                     </core:Icon>
                                                     <layout:VerticalLayout>
-                                                        <Text text="Traveling"/>
+                                                        <Text text="{i18n>lbInterestsTraveling}"/>
                                                         <layout:layoutData>
                                                             <layout:GridData span="L10M10S10"/>
                                                         </layout:layoutData>
@@ -239,7 +243,7 @@
                                                         </core:layoutData>
                                                     </core:Icon>
                                                     <layout:VerticalLayout>
-                                                        <Text text="Software Development"/>
+                                                        <Text text="{i18n>lbInterestsProgramming}"/>
                                                         <layout:layoutData>
                                                             <layout:GridData span="L10M10S10"/>
                                                         </layout:layoutData>
@@ -250,21 +254,19 @@
                                     </layout:BlockLayoutRow>
                                 </layout:BlockLayout>
                             </layout:BlockLayoutCell>
+                            <!--Main body -->
                             <layout:BlockLayoutCell class="textBox onePadding" width="3">
                                 <layout:BlockLayout>
                                     <!--Profile-->
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="Profile" class="onePadding">
-                                            <Text text="Solution-oriented SAP technology consultant with 4 years of experience in SAPUI5 and  OData development.
-                                            My main interests are high-performance, maintainable and simply intuitive SAP Fiori applications.
-                                            Highly accomplished in familiarization with new technologies and the implementation of customer requirements.
-                                            Enthusiastic team-player, who is constantly motivated about facing new challenges as well as sharing his knowledge."/>
+                                        <layout:BlockLayoutCell title="{i18n>mainProfileTitle}" class="onePadding">
+                                            <Text text="{i18n>mainProfileText}"/>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <!--Professional Experience-->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell
-                                                title="Professional Experience - SAP Deutschland - January 2015 till Now"
+                                                title="{i18n>mainProfExpTitle}"
                                                 class="onePadding">
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
@@ -272,23 +274,17 @@
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
-                                                <Title text="SAP Cloud Platform Development" titleStyle="H2"
+                                                <Title text="{i18n>mainProfExpFellowTitle}" titleStyle="H2"
                                                        class="noShadow titleBold"/>
-                                                <Title text="SAP SE, Walldorf / Germany - 6 Month" titleStyle="H4"
+                                                <Title text="{i18n>mainProfExpFellowPlace}" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
                                             <VBox>
                                                 <Text class="cellBox"
-                                                      text="Development and administration of a Mendix application for the production of training material"/>
-                                                <Title text="Core activities" titleStyle="H5"
+                                                      text="{i18n>mainProfExpFellowDesc}"/>
+                                                <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
-                                                <FormattedText
-                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;li>Development of a Mendix Application using the Mendix Desktop Modeler&lt;/li>
-                                                        &lt;li>Development of a Multi-Target application consisting of a SAPUI5 Frontend, a XSOData Service and a Hana Database Module&lt;/li>
-                                                        &lt;li>Setup and Administration of Development Landscape on SAP Cloud Platform (Cloud Foundry)&lt;/li>
-                                                        &lt;li>Setup of a Continuous Integration and Continuous Delivery Pipeline with Jenkins  &lt;/li>
-                                                        &lt;li>Setup of SAP Cloud Connector in order to build an End-to-End connection from SAP Cloud Platform to S4Hana Backend using Principle Propagation &lt;/li>
-                                                        &lt;/ul>"/>
+                                                <FormattedText htmlText="{profExpList>/fellowList}"/>
                                             </VBox>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
@@ -296,23 +292,16 @@
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
-                                                <Title text="SAP Fiori Application Development" titleStyle="H2"
+                                                <Title text="{i18n>mainProfExpMbvdTitle}" titleStyle="H2"
                                                        class="noShadow titleBold"/>
-                                                <Title text="Car Manufacturer, Germany - 12 Month" titleStyle="H4"
+                                                <Title text="{i18n>mainProfExpMbvdPlace}" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
                                             <VBox>
-                                                <Text class="cellBox" text=" Development of two SAP Fiori applications for the analysis and processing of quotations and orders in the context of car sales.
-                                                The data comes from a SAP Business Warehouse on HANA and is send to the frontend via an OData Service"/>
-                                                <Title text="Core activities" titleStyle="H5"
+                                                <Text class="cellBox" text="{i18n>mainProfExpMbvdDesc}"/>
+                                                <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
-                                                <FormattedText
-                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;li>Development of the SAP Fiori Applications (SAPUI5)&lt;/li>
-                                                   &lt;li>Development of OData Services&lt;/li>&lt;li>Working with ABAP CDS Views and referencing them in the OData Services &lt;/li>
-                                                   &lt;li>Developing/Deploying of apps with SAP WebIDE on SAP Cloud Platform &lt;/li>
-                                                   &lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>
-                                                   &lt;li>Working with Git as Version Control System&lt;/li>
-                                                   &lt;/ul>"/>
+                                                <FormattedText htmlText="{profExpList>/mbvdList}"/>
                                             </VBox>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
@@ -320,23 +309,16 @@
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
-                                                <Title text="SAP Fiori Application Development" titleStyle="H2"
+                                                <Title text="{i18n>mainProfExpTcTitle}" titleStyle="H2"
                                                        class="noShadow titleBold"/>
-                                                <Title text="Airline, Germany - 12 Month" titleStyle="H4"
+                                                <Title text="{i18n>mainProfExpTcPlace}" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
                                             <VBox>
-                                                <Text class="cellBox" text="Development and extension of several SAP Fiori Applications for the analysis of flight data.
-                                                The data comes from an SAP Application Server ABAP and is send to the frontend via an OData Service."/>
-                                                <Title text="Core activities" titleStyle="H5"
+                                                <Text class="cellBox" text="{i18n>mainProfExpTcDesc}"/>
+                                                <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
-                                                <FormattedText
-                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;li>Development and Extension of the SAP Fiori Applications (SAPUI5)&lt;/li>
-                                                   &lt;li>Development of OData Services&lt;/li>&lt;li>Working with ABAP CDS Views and referencing them in the OData Services &lt;/li>
-                                                   &lt;li>Developing/Deploying of apps with SAP WebIDE on SAP Cloud Platform &lt;/li>
-                                                   &lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>
-                                                   &lt;li>Working with Git as Version Control System&lt;/li>
-                                                   &lt;/ul>"/>
+                                                <FormattedText htmlText="{profExpList>/tcList}"/>
                                             </VBox>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
@@ -344,21 +326,16 @@
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
-                                                <Title text="SAPUI5 Frontend Application Development" titleStyle="H2"
+                                                <Title text="{i18n>mainProfExpFrTitle}" titleStyle="H2"
                                                        class="noShadow titleBold"/>
-                                                <Title text="Confectioner, Germany - 12 Month" titleStyle="H4"
+                                                <Title text="{i18n>mainProfExpFrPlace}" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
                                             <VBox>
-                                                <Text text="Development of a mobile application for the presentation of products and their marketing in supermarkets. The images shown originate from a SAP Netweaver Java backend and are transferred to the frontend via a REST Service."/>
-                                                <Title text="Core activities" titleStyle="H5"
+                                                <Text text="{i18n>mainProfExpFrDesc}"/>
+                                                <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
-                                                <FormattedText
-                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'> &lt;li>Development of the SAPUI5 Frontend&lt;/li>
-                                                    &lt;li>Administration of the SAP Netweaver Java&lt;/li>
-                                                    &lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>
-                                                    &lt;li>Working with Git as Version Control System&lt;/li>
-                                                    &lt;/ul>"/>
+                                                <FormattedText htmlText="{profExpList>/frList}"/>
                                             </VBox>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
@@ -366,30 +343,22 @@
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
-                                                <Title text="SAPUI5 Frontend Application Development" titleStyle="H3"
+                                                <Title text="{i18n>mainProfExpVwTitle}" titleStyle="H3"
                                                        class="noShadow titleBold"/>
-                                                <Title text="Car Manufacturer, Germany - 12 Month" titleStyle="H4"
+                                                <Title text="{i18n>mainProfExpVwPlace}" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
                                             <VBox>
-                                                <Text text="Development of a dashboard application to visualize supply bottlenecks between warehouse and production line.
-                                            The data comes from an SAP Application Server ABAP and is send to the frontend via an OData Service."/>
-                                                <Title text="Core activities" titleStyle="H5"
+                                                <Text text="{i18n>mainProfExpVwDesc}"/>
+                                                <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
-                                                <FormattedText
-                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;li>Development of the SAPUI5 Frontend&lt;/li>
-                                                    &lt;li>Development of a Dashboard Custom Control&lt;/li>
-                                                    &lt;li>Working with OData API for sending/retrieving Data from/to the OData Service&lt;/li>
-                                                    &lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>
-                                                    &lt;li>Working with Git as Version Control System&lt;/li>
-                                                    &lt;/ul>"/>
+                                                <FormattedText htmlText="{profExpList>/vwList}"/>
                                             </VBox>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                 </layout:BlockLayout>
                             </layout:BlockLayoutCell>
                         </layout:BlockLayoutRow>
-
                     </layout:BlockLayout>
                 </content>
             </Page>

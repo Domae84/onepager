@@ -20,6 +20,7 @@
     "grunt-contrib-copy": "*",
     "grunt-contrib-watch": "*",
     "grunt-eslint": "*",
+    "grunt-native2ascii": "^0.1.0",
     "grunt-openui5": "*"
   }
 }
