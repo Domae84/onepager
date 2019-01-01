@@ -134,7 +134,7 @@
                                                     <Link
                                                             text="BC 400"
                                                             target="_blank"
-                                                            href="https://training.sap.com/course/bc400-abap-workbench-grundlagen-classroom-016-de-de/" >
+                                                            href="https://training.sap.com/course/bc400-abap-workbench-grundlagen-classroom-016-de-de/">
                                                         <layoutData>
                                                             <layout:GridData span="L10M10S10"/>
                                                         </layoutData>
@@ -152,7 +152,7 @@
                                                     <Link
                                                             text="GW 100"
                                                             target="_blank"
-                                                            href="https://training.sap.com/course/gw100-sap-gateway---erstellen-von-odata-services-remoteclassroom-016-de-de/?" >
+                                                            href="https://training.sap.com/course/gw100-sap-gateway---erstellen-von-odata-services-remoteclassroom-016-de-de/?">
                                                         <layoutData>
                                                             <layout:GridData span="L10M10S10"/>
                                                         </layoutData>
@@ -171,7 +171,7 @@
                                                         <Link
                                                                 text="HA 300"
                                                                 target="_blank"
-                                                                href="https://training.sap.com/course/ha300e-sap-hana-modeling-e-learning-012-de-en/" >
+                                                                href="https://training.sap.com/course/ha300e-sap-hana-modeling-e-learning-012-de-en/">
                                                             <layoutData>
                                                                 <layout:GridData span="L10M10S10"/>
                                                             </layoutData>
@@ -255,11 +255,10 @@
                                     <!--Profile-->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="Profile" class="onePadding">
-                                            <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+                                            <Text text="Solution-oriented SAP technology consultant with 4 years of experience in SAPUI5 and  OData development.
+                                            My main interests are high-performance, maintainable and simply intuitive SAP Fiori applications.
+                                            Highly accomplished in familiarization with new technologies and the implementation of customer requirements.
+                                            Enthusiastic team-player, who is constantly motivated about facing new challenges as well as sharing his knowledge."/>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <!--Professional Experience-->
@@ -269,70 +268,27 @@
                                                 class="onePadding">
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
-                                    <!-- VW -->
+                                    <!-- Fellowship -->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
-                                                <Title text="SAPUI5 Frontend Application Development" titleStyle="H3"
+                                                <Title text="SAP Cloud Platform Development" titleStyle="H2"
                                                        class="noShadow titleBold"/>
-                                                <Title text="Car Manufacturer, Germany - 12 Month" titleStyle="H4"
+                                                <Title text="SAP SE, Walldorf / Germany - 6 Month" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
                                             <VBox>
-                                                <Text text="Development of a dashboard application to visualize supply bottlenecks between warehouse and production line.
-                                            The data comes from an SAP Application Server ABAP and is send to the frontend via an OData Service."/>
+                                                <Text class="cellBox"
+                                                      text="Development and administration of a Mendix application for the production of training material"/>
                                                 <Title text="Core activities" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
                                                 <FormattedText
-                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;li>Development of the SAPUI5 Frontend&lt;/li>
-                                                    &lt;li>Development of a Dashboard Custom Control&lt;/li>
-                                                    &lt;li>Working with OData API for sending/retrieving Data from/to the OData Service&lt;/li>
-                                                    &lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>
-                                                    &lt;/ul>"/>
-                                            </VBox>
-                                        </layout:BlockLayoutCell>
-                                    </layout:BlockLayoutRow>
-                                    <!-- Ferrero -->
-                                    <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="" class="onePadding">
-                                            <VBox class="sapUiTinyMarginBottom">
-                                                <Title text="SAPUI5 Frontend Application Development" titleStyle="H2"
-                                                       class="noShadow titleBold"/>
-                                                <Title text="Confectioner, Germany - 12 Month" titleStyle="H4"
-                                                       class="noShadow"/>
-                                            </VBox>
-                                            <VBox>
-                                                <Text text="Development of a mobile application for the presentation of products and their marketing in supermarkets. The images shown originate from a SAP Netweaver Java backend and are transferred to the frontend via a REST Service."/>
-                                                <Title text="Core activities" titleStyle="H5"
-                                                       class="noShadow titleBold sapUiTinyMarginTop"/>
-                                                <FormattedText
-                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'> &lt;li>Development of the SAPUI5 Frontend&lt;/li>
-                                                    &lt;li>Administration of the SAP Netweaver Java&lt;/li>
-                                                    &lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>
-                                                    &lt;/ul>"/>
-                                            </VBox>
-                                        </layout:BlockLayoutCell>
-                                    </layout:BlockLayoutRow>
-                                    <!-- Thomas Cook -->
-                                    <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell title="" class="onePadding">
-                                            <VBox class="sapUiTinyMarginBottom">
-                                                <Title text="SAP Fiori Application Development" titleStyle="H2"
-                                                       class="noShadow titleBold"/>
-                                                <Title text="Airline, Germany - 12 Month" titleStyle="H4"
-                                                       class="noShadow"/>
-                                            </VBox>
-                                            <VBox>
-                                                <Text class="cellBox" text="Development and extension of several SAP Fiori Applications for the analysis of flight data.
-                                                The data comes from an SAP Application Server ABAP and is send to the frontend via an OData Service."/>
-                                                <Title text="Core activities" titleStyle="H5"
-                                                       class="noShadow titleBold sapUiTinyMarginTop"/>
-                                                <FormattedText
-                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;li>Development and Extension of the SAP Fiori Applications (SAPUI5)&lt;/li>
-                                                   &lt;li>Development of OData Services&lt;/li>&lt;li>Working with ABAP CDS Views and referencing them in the OData Services &lt;/li>
-                                                   &lt;li>Developing/Deploying of apps with SAP WebIDE on SAP Cloud Platform &lt;/li>
-                                                   &lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>
-                                                   &lt;/ul>"/>
+                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;li>Development of a Mendix Application using the Mendix Desktop Modeler&lt;/li>
+                                                        &lt;li>Development of a Multi-Target application consisting of a SAPUI5 Frontend, a XSOData Service and a Hana Database Module&lt;/li>
+                                                        &lt;li>Setup and Administration of Development Landscape on SAP Cloud Platform (Cloud Foundry)&lt;/li>
+                                                        &lt;li>Setup of a Continuous Integration and Continuous Delivery Pipeline with Jenkins  &lt;/li>
+                                                        &lt;li>Setup of SAP Cloud Connector in order to build an End-to-End connection from SAP Cloud Platform to S4Hana Backend using Principle Propagation &lt;/li>
+                                                        &lt;/ul>"/>
                                             </VBox>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
@@ -355,29 +311,78 @@
                                                    &lt;li>Development of OData Services&lt;/li>&lt;li>Working with ABAP CDS Views and referencing them in the OData Services &lt;/li>
                                                    &lt;li>Developing/Deploying of apps with SAP WebIDE on SAP Cloud Platform &lt;/li>
                                                    &lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>
+                                                   &lt;li>Working with Git as Version Control System&lt;/li>
                                                    &lt;/ul>"/>
                                             </VBox>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
-                                    <!-- Fellowship -->
+                                    <!-- Thomas Cook -->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
                                             <VBox class="sapUiTinyMarginBottom">
-                                                <Title text="SAP Cloud Platform Development" titleStyle="H2"
+                                                <Title text="SAP Fiori Application Development" titleStyle="H2"
                                                        class="noShadow titleBold"/>
-                                                <Title text="SAP SE, Walldorf / Germany - 6 Month" titleStyle="H4"
+                                                <Title text="Airline, Germany - 12 Month" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
                                             <VBox>
-                                                <Text class="cellBox" text="Development and administration of a Mendix application for the production of training material"/>
+                                                <Text class="cellBox" text="Development and extension of several SAP Fiori Applications for the analysis of flight data.
+                                                The data comes from an SAP Application Server ABAP and is send to the frontend via an OData Service."/>
                                                 <Title text="Core activities" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
                                                 <FormattedText
-                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;li>Development of a Mendix Application using the Mendix Desktop Modeler&lt;/li>
-                                                   &lt;li>Setup and Administration of Development Landscape on SAP Cloud Platform (Cloud Foundry)&lt;/li>
-                                                   &lt;li>Setup of a Continuous Integration and Continuous Delivery Pipeline with Jenkins  &lt;/li>
-                                                   &lt;li>Setup of SAP Cloud Connector in order to build an End-to-End connection from SAP Cloud Platform to S4Hana Backend using Principle Propagation &lt;/li>
+                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;li>Development and Extension of the SAP Fiori Applications (SAPUI5)&lt;/li>
+                                                   &lt;li>Development of OData Services&lt;/li>&lt;li>Working with ABAP CDS Views and referencing them in the OData Services &lt;/li>
+                                                   &lt;li>Developing/Deploying of apps with SAP WebIDE on SAP Cloud Platform &lt;/li>
+                                                   &lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>
+                                                   &lt;li>Working with Git as Version Control System&lt;/li>
                                                    &lt;/ul>"/>
+                                            </VBox>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <!-- Ferrero -->
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell title="" class="onePadding">
+                                            <VBox class="sapUiTinyMarginBottom">
+                                                <Title text="SAPUI5 Frontend Application Development" titleStyle="H2"
+                                                       class="noShadow titleBold"/>
+                                                <Title text="Confectioner, Germany - 12 Month" titleStyle="H4"
+                                                       class="noShadow"/>
+                                            </VBox>
+                                            <VBox>
+                                                <Text text="Development of a mobile application for the presentation of products and their marketing in supermarkets. The images shown originate from a SAP Netweaver Java backend and are transferred to the frontend via a REST Service."/>
+                                                <Title text="Core activities" titleStyle="H5"
+                                                       class="noShadow titleBold sapUiTinyMarginTop"/>
+                                                <FormattedText
+                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'> &lt;li>Development of the SAPUI5 Frontend&lt;/li>
+                                                    &lt;li>Administration of the SAP Netweaver Java&lt;/li>
+                                                    &lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>
+                                                    &lt;li>Working with Git as Version Control System&lt;/li>
+                                                    &lt;/ul>"/>
+                                            </VBox>
+                                        </layout:BlockLayoutCell>
+                                    </layout:BlockLayoutRow>
+                                    <!-- VW -->
+                                    <layout:BlockLayoutRow>
+                                        <layout:BlockLayoutCell title="" class="onePadding">
+                                            <VBox class="sapUiTinyMarginBottom">
+                                                <Title text="SAPUI5 Frontend Application Development" titleStyle="H3"
+                                                       class="noShadow titleBold"/>
+                                                <Title text="Car Manufacturer, Germany - 12 Month" titleStyle="H4"
+                                                       class="noShadow"/>
+                                            </VBox>
+                                            <VBox>
+                                                <Text text="Development of a dashboard application to visualize supply bottlenecks between warehouse and production line.
+                                            The data comes from an SAP Application Server ABAP and is send to the frontend via an OData Service."/>
+                                                <Title text="Core activities" titleStyle="H5"
+                                                       class="noShadow titleBold sapUiTinyMarginTop"/>
+                                                <FormattedText
+                                                        htmlText="&lt;ul class='sapUiTinyMarginTop htmlList'>&lt;li>Development of the SAPUI5 Frontend&lt;/li>
+                                                    &lt;li>Development of a Dashboard Custom Control&lt;/li>
+                                                    &lt;li>Working with OData API for sending/retrieving Data from/to the OData Service&lt;/li>
+                                                    &lt;li>Setup of local development environment with Jetbrains Webstorm, Grunt and nodeJs&lt;/li>
+                                                    &lt;li>Working with Git as Version Control System&lt;/li>
+                                                    &lt;/ul>"/>
                                             </VBox>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
