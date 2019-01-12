@@ -1,5 +1,4 @@
 /dist/
-Gruntfile.js
-package.json
-package-lock.json
-Projekte.txt
+/package-lock.json
+/package.json
+/Projekte.txt
