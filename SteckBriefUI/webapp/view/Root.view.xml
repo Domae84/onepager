@@ -8,18 +8,18 @@
         <pages>
             <Page showHeader="false">
                 <content>
-                    <layout:Grid class="upperGrid">
+                    <layout:Grid class="upperGridElements" vSpacing="0">
                         <layout:content>
-                            <HBox justifyContent="Center" class="upperGridElements">
+                            <HBox justifyContent="Center" alignItems="Center" class="upperGridElements sapUiMediumMargin pic">
                                 <Image class="profilePic"
-                                       src="./images/domae_gedreht_lol.jpg"
+                                       src="./images/domae_gedreht_lol_qudrat.jpg"
                                        densityAware="false">
                                 </Image>
                                 <layoutData>
-                                    <layout:GridData span="L4M4S4"/>
+                                    <layout:GridData span="L3M3S3"/>
                                 </layoutData>
                             </HBox>
-                            <VBox class="upperGridElements sapUiLargeMarginTop sapUiLargeMarginBegin">
+                            <VBox class="upperGridElements sapUiMediumMarginTop">
                                 <HBox>
                                     <Text class="nameTitle nameBox" text="{i18n>name}"/>
                                 </HBox>
@@ -27,7 +27,7 @@
                                     <Text class="descriptionTitle descBox" text="{i18n>jobTitle}"/>
                                 </HBox>
                                 <layoutData>
-                                    <layout:GridData span="L8M8S8"/>
+                                    <layout:GridData span="L9M9S9"/>
                                 </layoutData>
                             </VBox>
 

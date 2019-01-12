@@ -20,14 +20,6 @@ module.exports = function(grunt) {
 		},
 
 		openui5_connect: {
-			options: {
-				resources: [
-					'<%= dir.bower_components %>/openui5-sap.ui.core/resources',
-					'<%= dir.bower_components %>/openui5-sap.m/resources',
-					'<%= dir.bower_components %>/openui5-themelib_sap_bluecrystal/resources',
-					'<%= dir.bower_components %>/openui5-sap.ui.layout/resources'
-				]
-			},
 			src: {
 				options: {
 					appresources: '<%= dir.webapp %>'
@@ -38,41 +30,6 @@ module.exports = function(grunt) {
 					appresources: '<%= dir.dist %>'
 				}
 			}
-		},
-
-		openui5_preload: {
-			component: {
-				options: {
-					resources: {
-						cwd: '<%= dir.webapp %>',
-						prefix: 'todo'
-					},
-					dest: '<%= dir.dist %>'
-				},
-				components: true
-			}
-		},
-
-		clean: {
-			dist: '<%= dir.dist %>/'
-		},
-
-		copy: {
-			dist: {
-				files: [ {
-					expand: true,
-					cwd: '<%= dir.webapp %>',
-					src: [
-						'**',
-						'!test/**'
-					],
-					dest: '<%= dir.dist %>'
-				} ]
-			}
-		},
-
-		eslint: {
-			webapp: ['<%= dir.webapp %>']
 		},
 		watch: {
 			options: {
@@ -103,31 +60,24 @@ module.exports = function(grunt) {
 	});
 
 	// These plugins provide necessary tasks.
+    grunt.loadNpmTasks("@sap/grunt-sapui5-bestpractice-build");
+    grunt.registerTask("default", [
+        "clean",
+        "lint",
+        "build"
+    ]);
 	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-openui5');
-	grunt.loadNpmTasks('grunt-eslint');
-    grunt.loadNpmTasks('grunt-native2ascii');
 
 	// Server task
 	grunt.registerTask('serve', function(target) {
 		grunt.task.run('openui5_connect:' + (target || 'src'));
 	});
 
-	// Linting task
-	grunt.registerTask('lint', ['eslint']);
-
-	// Build task
-	grunt.registerTask('build', ['openui5_preload', 'copy']);
-
 	// Default task
-	grunt.registerTask('default', [
+	grunt.registerTask('develop', [
         'serve',
 		'watch'
-
 	]);
-	// Task without Preloading
-	grunt.registerTask('nonPreload',['serve']);
 };
