@@ -12,14 +12,14 @@
                         <layout:content>
                             <HBox justifyContent="Center" class="upperGridElements">
                                 <Image class="profilePic"
-                                       src="./images/Download.jpeg"
+                                       src="./images/domae_gedreht_lol.jpg"
                                        densityAware="false">
                                 </Image>
                                 <layoutData>
                                     <layout:GridData span="L4M4S4"/>
                                 </layoutData>
                             </HBox>
-                            <VBox class="upperGridElements">
+                            <VBox class="upperGridElements sapUiLargeMarginTop sapUiLargeMarginBegin">
                                 <HBox>
                                     <Text class="nameTitle nameBox" text="{i18n>name}"/>
                                 </HBox>
@@ -30,6 +30,7 @@
                                     <layout:GridData span="L8M8S8"/>
                                 </layoutData>
                             </VBox>
+
                         </layout:content>
                     </layout:Grid>
                     <layout:BlockLayout id="BlockLayout">
@@ -332,7 +333,7 @@
                                                        class="noShadow"/>
                                             </VBox>
                                             <VBox>
-                                                <Text text="{i18n>mainProfExpFrDesc}"/>
+                                                <Text text="{i18n>mainProfExpFrDesc}" class="cellBox"/>
                                                 <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
                                                 <FormattedText htmlText="{profExpList>/frList}"/>
@@ -349,7 +350,7 @@
                                                        class="noShadow"/>
                                             </VBox>
                                             <VBox>
-                                                <Text text="{i18n>mainProfExpVwDesc}"/>
+                                                <Text text="{i18n>mainProfExpVwDesc}" class="cellBox"/>
                                                 <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
                                                 <FormattedText htmlText="{profExpList>/vwList}"/>

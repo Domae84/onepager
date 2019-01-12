@@ -1,11 +1,12 @@
 /* Enter your custom styles here */
 .profilePic {
     border-radius: 50%;
+    border-width:5px;
+    border-style:double;
     margin-top: 0;
-    border: 1px solid black;
     margin-bottom: 20px;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 280px;
     overflow: hidden;
 }
 
