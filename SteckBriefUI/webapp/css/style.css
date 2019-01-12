@@ -1,8 +1,8 @@
 /* Enter your custom styles here */
 .profilePic {
     border-radius: 50%;
-    border-width:5px;
-    border-style:double;
+    box-shadow: 2px 2px 6px #000000;
+    border: 5px double black;
     margin-top: 0;
     margin-bottom: 20px;
     height: 200px;
