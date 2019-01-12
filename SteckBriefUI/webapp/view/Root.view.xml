@@ -40,7 +40,7 @@
                                 <layout:BlockLayout>
                                     <!--Contact-->
                                     <layout:BlockLayoutRow>
-                                        <layout:BlockLayoutCell class="onePadding" title="Contact">
+                                        <layout:BlockLayoutCell class="onePadding" title="{i18n>lbContactTitle}">
                                             <layout:Grid class="noMarginPaddingLeftChild">
                                                 <layout:content>
                                                     <core:Icon
