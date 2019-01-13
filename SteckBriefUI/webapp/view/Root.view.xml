@@ -6,7 +6,7 @@
           displayBlock="true">
     <App id="idAppControl">
         <pages>
-            <Page showHeader="false">
+            <Page showHeader="false" class="customFont">
                 <content>
                     <layout:Grid class="upperGridElements upperGrid" vSpacing="0">
                         <layout:content>
@@ -25,7 +25,7 @@
                                 </HBox>
                                 <HBox alignItems="Center" class="sapUiTinyMarginTop">
                                     <VBox justifyContent="Center">
-                                        <Image src="/images/SAP-logo-icon-PNG-Transparent-Background.png" height="1rem" width="2rem"/>
+                                        <Image src="./images/SAP-logo-icon-PNG-Transparent-Background.png" height="1rem" width="2rem"/>
                                     </VBox>
                                     <Text class="descriptionTitle" text="{i18n>jobTitle}"/>
                                 </HBox>
