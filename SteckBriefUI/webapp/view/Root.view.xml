@@ -8,7 +8,7 @@
         <pages>
             <Page showHeader="false">
                 <content>
-                    <layout:Grid class="upperGridElements" vSpacing="0">
+                    <layout:Grid class="upperGridElements upperGrid" vSpacing="0">
                         <layout:content>
                             <HBox justifyContent="Center" alignItems="Center" class="upperGridElements sapUiMediumMargin pic">
                                 <Image class="profilePic"
@@ -23,8 +23,11 @@
                                 <HBox>
                                     <Text class="nameTitle nameBox" text="{i18n>name}"/>
                                 </HBox>
-                                <HBox>
-                                    <Text class="descriptionTitle descBox" text="{i18n>jobTitle}"/>
+                                <HBox alignItems="Center" class="sapUiTinyMarginTop">
+                                    <VBox justifyContent="Center">
+                                        <Image src="/images/SAP-logo-icon-PNG-Transparent-Background.png" height="1rem" width="2rem"/>
+                                    </VBox>
+                                    <Text class="descriptionTitle" text="{i18n>jobTitle}"/>
                                 </HBox>
                                 <layoutData>
                                     <layout:GridData span="L9M9S9"/>
@@ -97,27 +100,42 @@
                                                          defaultSpan="L12M12S12" vSpacing="0">
                                                 <layout:content>
                                                     <Text text="{i18n>lbBachelorName}" class="titleBold"/>
-                                                    <Text text="{i18n>lbBachelorTitle}"/>
-                                                    <Text text="{i18n>lbBachelorTown}"/>
-                                                    <Text text="{i18n>lbBachelorPeriod}" class="textEmph"/>
+                                                    <HBox class="sapUiTinyMarginBegin">
+                                                        <core:Icon class="customIcon" src="sap-icon://circle-task-2"/>
+                                                        <Text class="sapUiTinyMarginBegin" text="{i18n>lbBachelorTitle}"/>
+                                                    </HBox>
+                                                    <HBox class="sapUiTinyMarginBegin">
+                                                        <core:Icon class="customIcon" src="sap-icon://circle-task-2"/>
+                                                        <Text class="sapUiTinyMarginBegin" text="{i18n>lbBachelorTown}"/>
+                                                    </HBox>
                                                 </layout:content>
                                             </layout:Grid>
                                             <layout:Grid class="noMarginPaddingLeftChild sapUiSmallMarginBottom"
                                                          defaultSpan="L12M12S12" vSpacing="0">
                                                 <layout:content>
                                                     <Text text="{i18n>lbDiplomaName}" class="titleBold"/>
-                                                    <Text text="{i18n>lbDiplomaTitle}"/>
-                                                    <Text text="{i18n>lbDiplomaTown}"/>
-                                                    <Text text="{i18n>lbDiplomaPeriod}" class="textEmph"/>
+                                                    <HBox class="sapUiTinyMarginBegin">
+                                                        <core:Icon class="customIcon" src="sap-icon://circle-task-2"/>
+                                                        <Text class="sapUiTinyMarginBegin" text="{i18n>lbDiplomaTitle}"/>
+                                                    </HBox>
+                                                    <HBox class="sapUiTinyMarginBegin">
+                                                        <core:Icon class="customIcon" src="sap-icon://circle-task-2"/>
+                                                        <Text class="sapUiTinyMarginBegin" text="{i18n>lbDiplomaTown}"/>
+                                                    </HBox>
                                                 </layout:content>
                                             </layout:Grid>
                                             <layout:Grid class="noMarginPaddingLeftChild" defaultSpan="L12M12S12"
                                                          vSpacing="0">
                                                 <layout:content>
                                                     <Text text="{i18n>lbApprenticeName}" class="titleBold"/>
-                                                    <Text text="{i18n>lbApprenticeTitle}"/>
-                                                    <Text text="{i18n>lbApprenticeTown}"/>
-                                                    <Text text="{i18n>lbApprenticePeriod}" class="textEmph"/>
+                                                    <HBox class="sapUiTinyMarginBegin">
+                                                        <core:Icon class="customIcon" src="sap-icon://circle-task-2"/>
+                                                        <Text class="sapUiTinyMarginBegin" text="{i18n>lbApprenticeTitle}"/>
+                                                    </HBox>
+                                                    <HBox class="sapUiTinyMarginBegin">
+                                                        <core:Icon class="customIcon" src="sap-icon://circle-task-2"/>
+                                                        <Text class="sapUiTinyMarginBegin" text="{i18n>lbApprenticeTown}"/>
+                                                    </HBox>
                                                 </layout:content>
                                             </layout:Grid>
                                         </layout:BlockLayoutCell>
@@ -127,8 +145,7 @@
                                         <layout:BlockLayoutCell class="onePadding" title="{i18n>lbTrainingsTitle}">
                                             <layout:Grid class="noMarginPaddingLeftChild">
                                                 <layout:content>
-                                                    <core:Icon
-                                                            src="sap-icon://circle-task-2">
+                                                    <core:Icon src="sap-icon://circle-task-2">
                                                         <core:layoutData>
                                                             <layout:GridData span="L2M2S2"/>
                                                         </core:layoutData>
@@ -261,7 +278,7 @@
                                     <!--Profile-->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="{i18n>mainProfileTitle}" class="onePadding">
-                                            <Text text="{i18n>mainProfileText}"/>
+                                            <Text class="sapUiSmallMarginBegin projectBox" text="{i18n>mainProfileText}"/>
                                         </layout:BlockLayoutCell>
                                     </layout:BlockLayoutRow>
                                     <!--Professional Experience-->
@@ -274,13 +291,13 @@
                                     <!-- Fellowship -->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
-                                            <VBox class="sapUiTinyMarginBottom">
+                                            <VBox class="sapUiTinyMarginBottom sapUiSmallMarginBegin projectBox">
                                                 <Title text="{i18n>mainProfExpFellowTitle}" titleStyle="H2"
                                                        class="noShadow titleBold"/>
                                                 <Title text="{i18n>mainProfExpFellowPlace}" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
-                                            <VBox>
+                                            <VBox class="projectBox sapUiSmallMarginBegin">
                                                 <Text class="cellBox"
                                                       text="{i18n>mainProfExpFellowDesc}"/>
                                                 <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
@@ -292,14 +309,14 @@
                                     <!-- MBVD -->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
-                                            <VBox class="sapUiTinyMarginBottom">
+                                            <VBox class="sapUiTinyMarginBottom projectBox sapUiSmallMarginBegin">
                                                 <Title text="{i18n>mainProfExpMbvdTitle}" titleStyle="H2"
                                                        class="noShadow titleBold"/>
                                                 <Title text="{i18n>mainProfExpMbvdPlace}" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
-                                            <VBox>
-                                                <Text class="cellBox" text="{i18n>mainProfExpMbvdDesc}"/>
+                                            <VBox class="projectBox sapUiSmallMarginBegin">
+                                                <Text class="cellBox customHeight" text="{i18n>mainProfExpMbvdDesc}"/>
                                                 <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
                                                 <FormattedText htmlText="{profExpList>/mbvdList}"/>
@@ -309,14 +326,14 @@
                                     <!-- Thomas Cook -->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
-                                            <VBox class="sapUiTinyMarginBottom">
+                                            <VBox class="sapUiTinyMarginBottom projectBox sapUiSmallMarginBegin">
                                                 <Title text="{i18n>mainProfExpTcTitle}" titleStyle="H2"
                                                        class="noShadow titleBold"/>
                                                 <Title text="{i18n>mainProfExpTcPlace}" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
-                                            <VBox>
-                                                <Text class="cellBox" text="{i18n>mainProfExpTcDesc}"/>
+                                            <VBox class="projectBox sapUiSmallMarginBegin">
+                                                <Text class="cellBox customHeight" text="{i18n>mainProfExpTcDesc}"/>
                                                 <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
                                                 <FormattedText htmlText="{profExpList>/tcList}"/>
@@ -326,14 +343,14 @@
                                     <!-- Ferrero -->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
-                                            <VBox class="sapUiTinyMarginBottom">
+                                            <VBox class="sapUiTinyMarginBottom projectBox sapUiSmallMarginBegin">
                                                 <Title text="{i18n>mainProfExpFrTitle}" titleStyle="H2"
                                                        class="noShadow titleBold"/>
                                                 <Title text="{i18n>mainProfExpFrPlace}" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
-                                            <VBox>
-                                                <Text text="{i18n>mainProfExpFrDesc}" class="cellBox"/>
+                                            <VBox class="projectBox sapUiSmallMarginBegin">
+                                                <Text text="{i18n>mainProfExpFrDesc}" class="cellBox customHeight"/>
                                                 <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
                                                 <FormattedText htmlText="{profExpList>/frList}"/>
@@ -343,14 +360,14 @@
                                     <!-- VW -->
                                     <layout:BlockLayoutRow>
                                         <layout:BlockLayoutCell title="" class="onePadding">
-                                            <VBox class="sapUiTinyMarginBottom">
+                                            <VBox class="sapUiTinyMarginBottom projectBox sapUiSmallMarginBegin">
                                                 <Title text="{i18n>mainProfExpVwTitle}" titleStyle="H3"
                                                        class="noShadow titleBold"/>
                                                 <Title text="{i18n>mainProfExpVwPlace}" titleStyle="H4"
                                                        class="noShadow"/>
                                             </VBox>
-                                            <VBox>
-                                                <Text text="{i18n>mainProfExpVwDesc}" class="cellBox"/>
+                                            <VBox class="projectBox sapUiSmallMarginBegin">
+                                                <Text text="{i18n>mainProfExpVwDesc}" class="cellBox customHeight"/>
                                                 <Title text="{i18n>mainProfExpCoreActivities}" titleStyle="H5"
                                                        class="noShadow titleBold sapUiTinyMarginTop"/>
                                                 <FormattedText htmlText="{profExpList>/vwList}"/>

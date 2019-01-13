@@ -10,7 +10,7 @@
 }
 
 .upperGrid {
-    background-color: #EFF4F9;
+    background-color: white;
 }
 .upperGridElements {
     padding:0 !important;
@@ -42,11 +42,11 @@
 }
 
 .textBox {
-    background-color: #E7ECF0;
+    background-color: white;
 }
 
 .skillBox {
-    background-color: #E5E5E5;
+    background-color: white;
 }
 
 .onePadding > div {
@@ -90,4 +90,17 @@
 
 .cellBox {
     font-size: 1rem;
+}
+
+.projectBox {
+    padding-right: 10rem;
+    line-height: 1.3
+}
+
+.customHeight {
+    line-height: 1.3 !important;
+}
+
+.customIcon {
+    font-size: 0.5rem;
 }
