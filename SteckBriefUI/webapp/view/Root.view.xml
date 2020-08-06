@@ -54,7 +54,7 @@
                                                     </core:Icon>
                                                     <Text text="{i18n>mobile}">
                                                         <layoutData>
-                                                            <layout:GridData span="L10M10S10"/>
+                                                            <layout:GridData span="L8M8S10"/>
                                                         </layoutData>
                                                     </Text>
                                                 </layout:content>
@@ -69,7 +69,7 @@
                                                     </core:Icon>
                                                     <Text text="{i18n>mail}">
                                                         <layoutData>
-                                                            <layout:GridData span="L10M10S10"/>
+                                                            <layout:GridData span="L9M9S8"/>
                                                         </layoutData>
                                                     </Text>
                                                 </layout:content>
@@ -86,7 +86,7 @@
                                                         <Text text="{i18n>street}"/>
                                                         <Text text="{i18n>zip} {i18n>town}"/>
                                                         <layout:layoutData>
-                                                            <layout:GridData span="L10M10S10"/>
+                                                            <layout:GridData span="L8M8S10"/>
                                                         </layout:layoutData>
                                                     </layout:VerticalLayout>
                                                 </layout:content>
@@ -156,7 +156,7 @@
                                                             href="{i18n>lbTrainingsBc400Url}"
                                                             tooltip="{i18n>lbTrainingsBc400Url}">
                                                         <layoutData>
-                                                            <layout:GridData span="L10M10S10"/>
+                                                            <layout:GridData span="L8M8S10"/>
                                                         </layoutData>
                                                     </Link>
                                                 </layout:content>
@@ -175,7 +175,7 @@
                                                             href="{i18n>lbTrainingsGw100Url}"
                                                             tooltip="{i18n>lbTrainingsGw100Url}">
                                                         <layoutData>
-                                                            <layout:GridData span="L10M10S10"/>
+                                                            <layout:GridData span="L8M8S10"/>
                                                         </layoutData>
                                                     </Link>
                                                 </layout:content>
@@ -195,7 +195,7 @@
                                                                 href="{i18n>lbTrainingsHa300Url}"
                                                                 tooltip="{i18n>lbTrainingsHa300Url}">
                                                             <layoutData>
-                                                                <layout:GridData span="L10M10S10"/>
+                                                                <layout:GridData span="L8M8S10"/>
                                                             </layoutData>
                                                         </Link>
                                                     </layout:VerticalLayout>
@@ -216,7 +216,7 @@
                                                     </core:Icon>
                                                     <Text text="{i18n>lbInterestsTriathlon}">
                                                         <layoutData>
-                                                            <layout:GridData span="L10M10S10"/>
+                                                            <layout:GridData span="L8M10S10"/>
                                                         </layoutData>
                                                     </Text>
                                                 </layout:content>
@@ -231,7 +231,7 @@
                                                     </core:Icon>
                                                     <Text text="{i18n>lbInterestsSnowHike}">
                                                         <layoutData>
-                                                            <layout:GridData span="L10M10S10"/>
+                                                            <layout:GridData span="L8M8S10"/>
                                                         </layoutData>
                                                     </Text>
                                                 </layout:content>
@@ -247,7 +247,7 @@
                                                     <layout:VerticalLayout>
                                                         <Text text="{i18n>lbInterestsTraveling}"/>
                                                         <layout:layoutData>
-                                                            <layout:GridData span="L10M10S10"/>
+                                                            <layout:GridData span="L8M8S10"/>
                                                         </layout:layoutData>
                                                     </layout:VerticalLayout>
                                                 </layout:content>
@@ -263,7 +263,7 @@
                                                     <layout:VerticalLayout>
                                                         <Text text="{i18n>lbInterestsProgramming}"/>
                                                         <layout:layoutData>
-                                                            <layout:GridData span="L10M10S10"/>
+                                                            <layout:GridData span="L8M8S10"/>
                                                         </layout:layoutData>
                                                     </layout:VerticalLayout>
                                                 </layout:content>
