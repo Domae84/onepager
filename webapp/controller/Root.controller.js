@@ -12,6 +12,7 @@ sap.ui.define([
                 oProfExpListModel.setProperty("/tcList", this._getFormattedListText.call(this, "mainProfExpTcList"));
                 oProfExpListModel.setProperty("/frList", this._getFormattedListText.call(this, "mainProfExpFrList"));
                 oProfExpListModel.setProperty("/vwList", this._getFormattedListText.call(this, "mainProfExpVwList"));
+                oProfExpListModel.setProperty("/swmList", this._getFormattedListText.call(this, "mainProfExpSwmList"));
             }.bind(this));
         },
 
