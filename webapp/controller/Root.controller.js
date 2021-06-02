@@ -1,5 +1,6 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller",
+    "domae/privat/SteckBriefUI/libs/FileSaver"
 ], function (Controller) {
     "use strict";
 
@@ -34,6 +35,24 @@ sap.ui.define([
             }
             sHtmlString += "</ul>";
             return sHtmlString;
+        },
+
+        onDownloadProfile: function (oEvent) {
+            const oButton = oEvent.getSource();
+            this.byId("actionSheet").openBy(oButton);
+        },
+
+        onDownloadDocx: async function () {
+            const docx = await fetch('../documents/Berater_Profil_2021.docx', {
+                method: "POST"
+            });
+            const blob = await docx.blob();
+            saveAs(blob, "Berater_Profil_2021.docx");
+        },
+
+        onDownloadPdf: function () {
+            window.open(
+                "../documents/Berater_Profil_2021.pdf", "_blank");
         }
     });
 });
