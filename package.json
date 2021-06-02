@@ -1,10 +1,10 @@
 {
-  "name": "Steckbrief",
+  "name": "steckbrief",
   "version": "1.0.0",
   "description": "My carrer experience",
   "main": "index.html",
   "scripts": {
-    "start": "ui5 serve -o local.html",
+    "start": "ui5 serve -o index.html",
     "serve": "ui5 serve",
     "build": "ui5 build --clean-dest"
   },
