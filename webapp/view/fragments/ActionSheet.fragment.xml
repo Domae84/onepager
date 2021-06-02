@@ -1,0 +1,23 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+>
+	<ActionSheet
+		id="actionSheet"
+		xmlns="sap.m"
+		xmlns:core="sap.ui.core"
+		core:require="{ MessageToast: 'sap/m/MessageToast' }"
+		placement="Bottom"
+	>
+		<Button
+			text="{i18n>techDocx}"
+			icon="sap-icon://document"
+			press=".onDownloadDocx"
+		/>
+		<Button
+			text="{i18n>techPdf}"
+			icon="sap-icon://pdf-attachment"
+			press=".onDownloadPdf"
+		/>
+	</ActionSheet>
+</c:FragmentDefinition>
