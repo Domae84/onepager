@@ -5,8 +5,6 @@
 	<ActionSheet
 		id="actionSheet"
 		xmlns="sap.m"
-		xmlns:core="sap.ui.core"
-		core:require="{ MessageToast: 'sap/m/MessageToast' }"
 		placement="Bottom"
 	>
 		<Button

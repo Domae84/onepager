@@ -43,7 +43,9 @@ sap.ui.define([
         },
 
         onDownloadDocx: async function () {
-            const docx = await fetch('../documents/Berater_Profil_2021.docx', {
+            const bEngLocale = sap.ui.getCore().getConfiguration().getLanguage().includes("en");
+            const sPath = bEngLocale ? "../documents/Berater_Profil_2021_eng.docx" : "../documents/Berater_Profil_2021.docx";
+            const docx = await fetch(sPath, {
                 method: "POST"
             });
             const blob = await docx.blob();
@@ -51,8 +53,10 @@ sap.ui.define([
         },
 
         onDownloadPdf: function () {
+            const bEngLocale = sap.ui.getCore().getConfiguration().getLanguage().includes("en");
+            const sPath = bEngLocale ? "../documents/Berater_Profil_2021_eng.pdf" : "../documents/Berater_Profil_2021.pdf";
             window.open(
-                "../documents/Berater_Profil_2021.pdf", "_blank");
+                sPath);
         }
     });
 });

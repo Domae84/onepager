@@ -456,8 +456,12 @@
 												text="{i18n>mainProfileDescription3}"
 											/>
 											<Text
-												class="sapUiSmallMarginBegin projectBox"
+												class="sapUiSmallMarginBegin projectBox sapUiTinyMarginBottom"
 												text="{i18n>mainProfileDescription4}"
+											/>
+											<Text
+												class="sapUiSmallMarginBegin projectBox"
+												text="{i18n>mainProfileDescription5}"
 											/>
 										</layout:BlockLayoutCell>
 									</layout:BlockLayoutRow>
