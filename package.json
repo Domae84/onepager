@@ -1,12 +1,11 @@
 {
   "name": "steckbrief",
   "version": "1.0.0",
-  "description": "My carrer experience",
-  "main": "index.html",
+  "description": "My career experience",
+  "main": "webapp/index.html",
   "scripts": {
-    "start": "ui5 serve -o index.html",
-    "serve": "ui5 serve",
-    "build": "ui5 build --clean-dest"
+    "start": "fiori run --open 'index.html'",
+    "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist"
   },
   "repository": {
     "type": "git",
@@ -16,19 +15,13 @@
   "license": "ISC",
   "devDependencies": {
     "@ui5/cli": "latest",
-    "eslint": "latest",
-    "grunt": "latest",
-    "grunt-nwabap-ui5uploader": "latest",
-    "ui5-middleware-livereload": "latest",
-    "ui5-middleware-servestatic": "latest"
+    "@sap/ux-ui5-tooling": "latest",
+    "rimraf": "3.0.2",
+    "@sapui5/ts-types": "latest"
   },
   "ui5": {
     "dependencies": [
-      "ui5-middleware-servestatic",
-      "ui5-middleware-livereload"
+      "@sap/ux-ui5-tooling"
     ]
-  },
-  "dependencies": {
-    "node": "^14.7.0"
   }
 }
