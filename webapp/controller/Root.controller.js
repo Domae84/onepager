@@ -14,6 +14,8 @@ sap.ui.define([
                 oProfExpListModel.setProperty("/frList", this._getFormattedListText.call(this, "mainProfExpFrList"));
                 oProfExpListModel.setProperty("/vwList", this._getFormattedListText.call(this, "mainProfExpVwList"));
                 oProfExpListModel.setProperty("/swmList", this._getFormattedListText.call(this, "mainProfExpSwmList"));
+                oProfExpListModel.setProperty("/pariconList", this._getFormattedListText.call(this, "mainProfExpPariList"));
+                oProfExpListModel.setProperty("/axiansList", this._getFormattedListText.call(this, "mainProfExpAxiList"));
             }.bind(this));
         },
 
@@ -44,17 +46,17 @@ sap.ui.define([
 
         onDownloadDocx: async function () {
             const bEngLocale = sap.ui.getCore().getConfiguration().getLanguage().includes("en");
-            const sPath = bEngLocale ? "../documents/Berater_Profil_2021_eng.docx" : "../documents/Berater_Profil_2021.docx";
+            const sPath = bEngLocale ? "../documents/Berater_Profil_2023_eng.docx" : "../documents/Berater_Profil_2023.docx";
             const docx = await fetch(sPath, {
                 method: "POST"
             });
             const blob = await docx.blob();
-            saveAs(blob, "Berater_Profil_2021.docx");
+            saveAs(blob, "Berater_Profil_2023.docx");
         },
 
         onDownloadPdf: function () {
             const bEngLocale = sap.ui.getCore().getConfiguration().getLanguage().includes("en");
-            const sPath = bEngLocale ? "../documents/Berater_Profil_2021_eng.pdf" : "../documents/Berater_Profil_2021.pdf";
+            const sPath = bEngLocale ? "../documents/Berater_Profil_2023_eng.pdf" : "../documents/Berater_Profil_2023.pdf";
             window.open(
                 sPath);
         }
