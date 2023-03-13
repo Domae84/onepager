@@ -5,7 +5,8 @@
   "main": "webapp/index.html",
   "scripts": {
     "start": "fiori run --open 'index.html'",
-    "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist"
+    "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist",
+    "deploy":"npm run build && node transfer.js"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,8 @@
   "author": "Dominik Espitalier",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "latest",
+    "ssh2-sftp-client": "latest",
     "@ui5/cli": "latest",
     "@sap/ux-ui5-tooling": "latest",
     "rimraf": "3.0.2",
