@@ -1,5 +1,2 @@
-/dist/
-/Projekte.txt
-/Gruntfile.js
 node_modules
 /.env

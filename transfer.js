@@ -3,7 +3,7 @@ require('dotenv').config();
 const path = require('path');
 
 const client = new ftpClient();
-const sourcePath = path.join(__dirname,'dist');
+const sourcePath = path.join(__dirname,'site');
 
 const config = {
     host: 'access-5000011501.ud-webspace.de',

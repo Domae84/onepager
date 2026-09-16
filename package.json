@@ -1,12 +1,11 @@
 {
-  "name": "steckbrief",
-  "version": "1.0.0",
-  "description": "My career experience",
-  "main": "webapp/index.html",
+  "name": "onepager",
+  "version": "2.0.0",
+  "description": "Dominik Espitalier — personal SAP Fiori consultant homepage",
+  "main": "site/index.html",
   "scripts": {
-    "start": "fiori run --open 'index.html'",
-    "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist",
-    "deploy":"npm run build && node transfer.js"
+    "start": "npx serve site",
+    "deploy": "node transfer.js"
   },
   "repository": {
     "type": "git",
@@ -16,15 +15,6 @@
   "license": "ISC",
   "devDependencies": {
     "dotenv": "latest",
-    "ssh2-sftp-client": "latest",
-    "@ui5/cli": "latest",
-    "@sap/ux-ui5-tooling": "latest",
-    "rimraf": "3.0.2",
-    "@sapui5/ts-types": "latest"
-  },
-  "ui5": {
-    "dependencies": [
-      "@sap/ux-ui5-tooling"
-    ]
+    "ssh2-sftp-client": "latest"
   }
 }
