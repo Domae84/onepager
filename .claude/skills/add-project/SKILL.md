@@ -22,8 +22,8 @@ Dominik does not edit this repo himself — he describes the change in conversat
 4. **Translate to English** — don't just mirror the German 1:1; write natural English, but keep every fact (dates, names, tech) identical.
 5. **Add to both `de` and `en` trees**, same array index, same structure.
 6. Run `npm run check-content` — catches missing fields or DE/EN array-length mismatches.
-7. Run `npm run build` — regenerates `site/index.html` and `site/en/index.html`.
-8. Ask whether to also run `npm run generate-cv` (regenerates the PDF/Word CVs from the same data — remind Dominik to close them in Word first, or the write fails with EBUSY).
+7. Run `npm run build` — regenerates `site/index.html` and `site/en/index.html`. This also stamps `css/style.css` and `js/main.js` with a content-hash query string (`?v=<hash>`), so browsers pick up the new file instead of serving a stale cached copy after deploy.
+8. Run `npm run generate-cv` — regenerates the PDF/Word CVs (DE+EN) from the same data. Do this by default for every content change, without being asked. If it fails with EBUSY, tell Dominik to close the CV files in Word first, then re-run.
 9. Offer to git commit — only if he asks; don't commit unprompted.
 
 ## Style rules learned the hard way (follow these without being asked again)

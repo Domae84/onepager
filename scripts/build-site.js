@@ -7,6 +7,7 @@
 // language-toggle click; this only fixes the *initial*, no-JS state.
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const SITE_CONTENT = require("../site/js/content.js");
 const RENDER = require("../site/js/render.js");
@@ -19,6 +20,14 @@ const LANGS = {
   de: { outPath: path.join(SITE_DIR, "index.html"), url: BASE_URL + "/", cvSuffix: "DE" },
   en: { outPath: path.join(SITE_DIR, "en", "index.html"), url: BASE_URL + "/en/", cvSuffix: "EN" }
 };
+
+function fileHash(relPath) {
+  const contents = fs.readFileSync(path.join(SITE_DIR, relPath));
+  return crypto.createHash("md5").update(contents).digest("hex").slice(0, 8);
+}
+
+const CSS_VERSION = fileHash("css/style.css");
+const JS_VERSION = fileHash("js/main.js");
 
 const CONTAINERS = {
   "core-columns": (data) => RENDER.coreColumnsHtml(data),
@@ -80,6 +89,9 @@ function buildPage(lang) {
 
   html = html.replace("<!--SEO_HEAD-->", buildSeoHead(lang, data));
   html = html.replace('<html lang="de">', `<html lang="${lang}">`);
+  html = html
+    .replace('href="/css/style.css"', `href="/css/style.css?v=${CSS_VERSION}"`)
+    .replace('src="/js/main.js"', `src="/js/main.js?v=${JS_VERSION}"`);
 
   html = html.replace(
     /(<(\w+)([^>]*?)\bdata-i18n="([\w.]+)"([^>]*?)>)(\s*)(<\/\2>)/g,

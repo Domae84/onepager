@@ -70,5 +70,19 @@
       : content[lang].timeline.earlierLabel;
   });
 
+  var navToggle = document.getElementById("nav-toggle");
+  var navLinks = document.getElementById("nav-links");
+  navToggle.addEventListener("click", function () {
+    var isOpen = navLinks.classList.contains("open");
+    navLinks.classList.toggle("open", !isOpen);
+    navToggle.setAttribute("aria-expanded", String(!isOpen));
+  });
+  navLinks.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      navLinks.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
   setLang(initialLang());
 })();

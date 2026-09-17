@@ -60,7 +60,7 @@ var SITE_CONTENT = {
         {
           period: "2026",
           title: "Freiberuflicher SAP-Berater",
-          client: "Kunde: Beratungsunternehmen, Rosenheim — SAP Fiori/UI5 Developer im Bankensektor",
+          client: "Kunde: Paricon AG, Rosenheim — SAP Fiori/UI5 Developer im Bankensektor",
           summary: "Erweiterung einer bestehenden SAP-Fiori-Anwendung für das Management von Validierungsmethoden, -gruppen und -regeln im Bankenumfeld, inklusive Excel-basierter Import-/Export-Funktion für hierarchische Regelzuordnungen.",
           bullets: [
             "Integration und Erweiterung des OData-Service CONS_VECRULE_SRV",
@@ -73,7 +73,7 @@ var SITE_CONTENT = {
         {
           period: "2025 — Heute", current: true,
           title: "Freiberuflicher SAP-Berater",
-          client: "Kunde: Beratungsunternehmen, Rosenheim — als Lead Developer & Solution Architect",
+          client: "Kunde: Paricon AG, Rosenheim — als Lead Developer & Solution Architect",
           summary: "Konzeption und Umsetzung einer neuen, hybriden Lösung zur Datenanonymisierung als Ablösung einer Altanwendung — bestehend aus einer Fiori-App-Suite für Customizing und Steuerung auf der SAP BTP sowie der Anonymisierungslogik auf dem On-Premise-S/4HANA-System.",
           bullets: [
             "Konzeption der Gesamtarchitektur als vollständige Ablösung einer bestehenden Altlösung",
@@ -87,7 +87,7 @@ var SITE_CONTENT = {
         {
           period: "2025",
           title: "Freiberuflicher SAP-Berater",
-          client: "Kunde: Beratungsunternehmen, Rosenheim — SAP Full-Stack Entwickler (On-Premise)",
+          client: "Kunde: Paricon AG, Rosenheim — SAP Full-Stack Entwickler (On-Premise)",
           summary: "Konzeption und Entwicklung einer SAPUI5 Fiori-Freestyle-Applikation zur Modellierung von Test- und Migrationsobjekten als Grundlage für mehrere nachgelagerte Anwendungen.",
           bullets: [
             "Interne Produktlösung zur standardisierten Pflege komplexer Migrationsstrukturen",
@@ -113,7 +113,7 @@ var SITE_CONTENT = {
         {
           period: "2022 — Heute", current: true,
           title: "Freiberuflicher SAP-Berater",
-          client: "Kunde: Beratungsunternehmen, Rosenheim — SAP BTP & Fiori Launchpad Administrator",
+          client: "Kunde: Paricon AG, Rosenheim — SAP BTP & Fiori Launchpad Administrator",
           summary: "Aufbau und Administration der SAP-BTP-Landschaft des Kunden von Grund auf — Subaccount- und Trust-Konfiguration, SAP Build Workzone sowie Aktivierung und Rollenkonfiguration des On-Premise SAP Fiori Launchpad.",
           bullets: [
             "SAP BTP als Pionier beim Kunden eingeführt: Subaccount-Setup, Cloud-Foundry-Umgebung und Trust-Konfiguration mit Custom Identity Provider (SAP IAS)",
@@ -253,7 +253,7 @@ var SITE_CONTENT = {
         {
           period: "2026",
           title: "Freelance SAP Consultant",
-          client: "Client: Consulting firm, Rosenheim — SAP Fiori/UI5 Developer in the banking sector",
+          client: "Client: Paricon AG, Rosenheim — SAP Fiori/UI5 Developer in the banking sector",
           summary: "Extended an existing SAP Fiori application for managing validation methods, groups and rules in a banking environment, including an Excel-based import/export function for hierarchical rule assignments.",
           bullets: [
             "Integrated and extended the OData service CONS_VECRULE_SRV",
@@ -266,7 +266,7 @@ var SITE_CONTENT = {
         {
           period: "2025 — Present", current: true,
           title: "Freelance SAP Consultant",
-          client: "Client: Consulting firm, Rosenheim — as Lead Developer & Solution Architect",
+          client: "Client: Paricon AG, Rosenheim — as Lead Developer & Solution Architect",
           summary: "Designed and built a new, hybrid data anonymisation solution replacing a legacy application — comprising a Fiori app suite for customising and controlling the process on SAP BTP, with the anonymisation logic running on-premise on the S/4HANA system.",
           bullets: [
             "Designed the overall architecture as a full replacement for an existing legacy solution",
@@ -280,7 +280,7 @@ var SITE_CONTENT = {
         {
           period: "2025",
           title: "Freelance SAP Consultant",
-          client: "Client: Consulting firm, Rosenheim — SAP Full-Stack Developer (On-Premise)",
+          client: "Client: Paricon AG, Rosenheim — SAP Full-Stack Developer (On-Premise)",
           summary: "Designed and built a SAP Fiori Freestyle (SAPUI5) application to model test and migration objects, forming the basis for several downstream applications.",
           bullets: [
             "Internal product solution for standardised maintenance of complex migration structures",
@@ -306,7 +306,7 @@ var SITE_CONTENT = {
         {
           period: "2022 — Present", current: true,
           title: "Freelance SAP Consultant",
-          client: "Client: Consulting firm, Rosenheim — SAP BTP & Fiori Launchpad Administrator",
+          client: "Client: Paricon AG, Rosenheim — SAP BTP & Fiori Launchpad Administrator",
           summary: "Built and administered the client's SAP BTP landscape from the ground up — subaccount and trust configuration, SAP Build Workzone, as well as activation and role configuration of the on-premise SAP Fiori Launchpad.",
           bullets: [
             "Introduced SAP BTP as a pioneer at the client: subaccount setup, Cloud Foundry environment and trust configuration with a custom Identity Provider (SAP IAS)",
