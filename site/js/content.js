@@ -74,15 +74,15 @@ var SITE_CONTENT = {
           period: "2025 — Heute", current: true,
           title: "Freiberuflicher SAP-Berater",
           client: "Kunde: Paricon AG, Rosenheim — als Lead Developer & Solution Architect",
-          summary: "Konzeption und Umsetzung einer neuen, hybriden Lösung zur Datenanonymisierung als Ablösung einer Altanwendung — bestehend aus einer Fiori-App-Suite für Customizing und Steuerung auf der SAP BTP sowie der Anonymisierungslogik auf dem On-Premise-S/4HANA-System.",
+          summary: "Konzeption und Umsetzung einer neuen, hybriden Lösung zur Datenanonymisierung als Ablösung einer Altanwendung — bestehend aus einer SAP-Fiori-App-Suite für Customizing und Steuerung auf der SAP BTP sowie der Anonymisierungslogik auf dem On-Premise-S/4HANA-System.",
           bullets: [
             "Konzeption der Gesamtarchitektur als vollständige Ablösung einer bestehenden Altlösung",
-            "Suite aus vier Fiori-Anwendungen für Customizing und Steuerung, eingebunden ins SAP Build Workzone",
-            "SAP CAP OData V4 als zentrale Service-Schicht auf der SAP BTP (PostgreSQL, HANA Cloud)",
+            "Suite aus vier SAP-Fiori-Anwendungen für Customizing und Steuerung, eingebunden ins SAP Build Workzone",
+            "SAP CAP OData V4 als zentrale Service-Schicht auf der SAP BTP (PostgreSQL, SAP HANA Cloud)",
             "Anbindung an die On-Premise-Anonymisierungslogik (ABAP-OData-Service auf S/4HANA) über den SAP Cloud Connector",
             "Code-Reviews im Entwicklerteam"
           ],
-          tags: ["SAP CAP", "SAP Fiori Launchpad", "SAP Build Workzone", "ABAP OData", "S/4HANA", "Cloud Connector"]
+          tags: ["SAP CAP", "SAP Fiori Launchpad", "SAP Build Workzone", "ABAP OData", "S/4HANA", "SAP Cloud Connector"]
         },
         {
           period: "2025",
@@ -113,7 +113,7 @@ var SITE_CONTENT = {
         {
           period: "2022 — Heute", current: true,
           title: "Freiberuflicher SAP-Berater",
-          client: "Kunde: Paricon AG, Rosenheim — SAP BTP & Fiori Launchpad Administrator",
+          client: "Kunde: Paricon AG, Rosenheim — SAP BTP & SAP Fiori Launchpad Administrator",
           summary: "Aufbau und Administration der SAP-BTP-Landschaft des Kunden von Grund auf — Subaccount- und Trust-Konfiguration, SAP Build Workzone sowie Aktivierung und Rollenkonfiguration des On-Premise SAP Fiori Launchpad.",
           bullets: [
             "SAP BTP als Pionier beim Kunden eingeführt: Subaccount-Setup, Cloud-Foundry-Umgebung und Trust-Konfiguration mit Custom Identity Provider (SAP IAS)",
@@ -267,15 +267,15 @@ var SITE_CONTENT = {
           period: "2025 — Present", current: true,
           title: "Freelance SAP Consultant",
           client: "Client: Paricon AG, Rosenheim — as Lead Developer & Solution Architect",
-          summary: "Designed and built a new, hybrid data anonymisation solution replacing a legacy application — comprising a Fiori app suite for customising and controlling the process on SAP BTP, with the anonymisation logic running on-premise on the S/4HANA system.",
+          summary: "Designed and built a new, hybrid data anonymisation solution replacing a legacy application — comprising a SAP Fiori app suite for customising and controlling the process on SAP BTP, with the anonymisation logic running on-premise on the S/4HANA system.",
           bullets: [
             "Designed the overall architecture as a full replacement for an existing legacy solution",
-            "Suite of four Fiori applications for customising and control, embedded in SAP Build Workzone",
-            "SAP CAP OData V4 as the central service layer on SAP BTP (PostgreSQL, HANA Cloud)",
+            "Suite of four SAP Fiori applications for customising and control, embedded in SAP Build Workzone",
+            "SAP CAP OData V4 as the central service layer on SAP BTP (PostgreSQL, SAP HANA Cloud)",
             "Connection to the on-premise anonymisation logic (ABAP OData service on S/4HANA) via the SAP Cloud Connector",
             "Code reviews within the development team"
           ],
-          tags: ["SAP CAP", "SAP Fiori Launchpad", "SAP Build Workzone", "ABAP OData", "S/4HANA", "Cloud Connector"]
+          tags: ["SAP CAP", "SAP Fiori Launchpad", "SAP Build Workzone", "ABAP OData", "S/4HANA", "SAP Cloud Connector"]
         },
         {
           period: "2025",
@@ -306,7 +306,7 @@ var SITE_CONTENT = {
         {
           period: "2022 — Present", current: true,
           title: "Freelance SAP Consultant",
-          client: "Client: Paricon AG, Rosenheim — SAP BTP & Fiori Launchpad Administrator",
+          client: "Client: Paricon AG, Rosenheim — SAP BTP & SAP Fiori Launchpad Administrator",
           summary: "Built and administered the client's SAP BTP landscape from the ground up — subaccount and trust configuration, SAP Build Workzone, as well as activation and role configuration of the on-premise SAP Fiori Launchpad.",
           bullets: [
             "Introduced SAP BTP as a pioneer at the client: subaccount setup, Cloud Foundry environment and trust configuration with a custom Identity Provider (SAP IAS)",
