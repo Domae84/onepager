@@ -59,10 +59,11 @@ button { font-family: inherit; cursor: pointer; }
 .lang-toggle {
   display: flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface);
 }
-.lang-toggle button {
-  border: none; background: transparent; padding: 8px 12px; font-size: 13px; font-weight: 700; color: var(--text-soft);
+.lang-toggle a {
+  display: inline-block; border: none; background: transparent; padding: 8px 12px; font-size: 13px; font-weight: 700; color: var(--text-soft);
 }
-.lang-toggle button.active { background: var(--accent); color: #fff; }
+.lang-toggle a:hover { text-decoration: none; }
+.lang-toggle a.active { background: var(--accent); color: #fff; }
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 700;

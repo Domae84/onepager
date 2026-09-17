@@ -4,8 +4,11 @@
   "description": "Dominik Espitalier — personal SAP Fiori consultant homepage",
   "main": "site/index.html",
   "scripts": {
-    "start": "npx serve site",
-    "deploy": "node transfer.js"
+    "build": "node scripts/build-site.js",
+    "start": "npm run build && npx serve site",
+    "check-content": "node scripts/check-content.js",
+    "generate-cv": "node scripts/generate-cv.js",
+    "deploy": "npm run build && node transfer.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +17,9 @@
   "author": "Dominik Espitalier",
   "license": "ISC",
   "devDependencies": {
+    "docx": "^9.7.1",
     "dotenv": "latest",
+    "puppeteer-core": "^25.11.0",
     "ssh2-sftp-client": "latest"
   }
 }
